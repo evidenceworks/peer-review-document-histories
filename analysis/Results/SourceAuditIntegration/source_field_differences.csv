@@ -1,0 +1,26 @@
+key,field,before,after
+elife-preprint-100967-v1.xml,assessment_doi,10.7554/eLife.100967.1.sa2,
+elife-preprint-107041-v1.xml,labels,[],"[""incomplete""]"
+elife-preprint-107041-v1.xml,group,ungraded,below_solid
+elife-preprint-107041-v1.xml,assessment_present,False,True
+elife-preprint-107041-v1.xml,assessment_doi,,10.7554/eLife.107041.1.sa5
+elife-preprint-109502-v1.xml,labels,[],
+elife-preprint-109502-v1.xml,group,ungraded,unresolved_assessment
+elife-preprint-109502-v1.xml,assessment_doi,10.7554/eLife.109502.1.sa7,
+elife-preprint-109502-v1.xml,assessment_candidates,"[{""doi"": ""10.7554/eLife.109502.1.sa7"", ""labels"": [""compelling""], ""text"": ""This study offers valuable insights into the anatomical and physiological features of cold-selective lamina I spinal projection neurons. The evidence supporting the authors' claims is compelling , although including a larger sample size and more quantification would have strengthened the study further, and the claims of monosynaptic connectivity would benefit from being stated more cautiously. The work will interest those in the field of somatosensory biology, especially researchers studying spinal cord dorsal horn circuits and projection neuron cell types.""}, {""doi"": ""10.7554/eLife.109502.1.sa8"", ""labels"": [""convincing""], ""text"": ""This study offers valuable insights into the anatomical and physiological features of cold-selective lamina I spinal projection neurons. The evidence supporting the authors' claims is convincing , although including a larger sample size and more quantification would have strengthened the study further, and the claims of monosynaptic connectivity would benefit from being stated more cautiously. The work will interest those in the field of somatosensory biology, especially researchers studying spinal cord dorsal horn circuits and projection neuron cell types.""}]","[{""doi"": ""10.7554/elife.109502.1.sa7"", ""labels"": [""compelling""], ""text"": ""This study offers valuable insights into the anatomical and physiological features of cold-selective lamina I spinal projection neurons. The evidence supporting the authors' claims is compelling , although including a larger sample size and more quantification would have strengthened the study further, and the claims of monosynaptic connectivity would benefit from being stated more cautiously. The work will interest those in the field of somatosensory biology, especially researchers studying spinal cord dorsal horn circuits and projection neuron cell types.""}, {""doi"": ""10.7554/elife.109502.1.sa8"", ""labels"": [""convincing""], ""text"": ""This study offers valuable insights into the anatomical and physiological features of cold-selective lamina I spinal projection neurons. The evidence supporting the authors' claims is convincing , although including a larger sample size and more quantification would have strengthened the study further, and the claims of monosynaptic connectivity would benefit from being stated more cautiously. The work will interest those in the field of somatosensory biology, especially researchers studying spinal cord dorsal horn circuits and projection neuron cell types.""}]"
+elife-preprint-87030-v1.xml,labels,[],"[""incomplete""]"
+elife-preprint-87030-v1.xml,group,ungraded,below_solid
+elife-preprint-87030-v1.xml,assessment_present,False,True
+elife-preprint-87030-v1.xml,assessment_doi,,10.7554/eLife.87030.1.sa1
+elife-preprint-90046-v2.xml,labels,[],"[""incomplete"", ""solid""]"
+elife-preprint-90046-v2.xml,group,ungraded,mixed_boundary
+elife-preprint-90046-v2.xml,assessment_present,False,True
+elife-preprint-90046-v2.xml,assessment_doi,,10.7554/eLife.90046.2.sa3
+elife-preprint-90949-v1.xml,labels,[],"[""convincing""]"
+elife-preprint-90949-v1.xml,group,ungraded,at_least_solid
+elife-preprint-90949-v1.xml,assessment_present,False,True
+elife-preprint-90949-v1.xml,assessment_doi,,10.7554/eLife.90949.1.sa3
+elife-preprint-93656-v2.xml,labels,[],"[""compelling""]"
+elife-preprint-93656-v2.xml,group,ungraded,at_least_solid
+elife-preprint-93656-v2.xml,assessment_present,False,True
+elife-preprint-93656-v2.xml,assessment_doi,,10.7554/eLife.93656.2.sa2

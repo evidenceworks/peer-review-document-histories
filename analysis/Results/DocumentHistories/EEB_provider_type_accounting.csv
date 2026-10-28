@@ -1,0 +1,256 @@
+family,stratum,query_ordinal,queried_doi,provider,output_type,outputs,qualifying_eLife_review_type
+87536,no_reachable_PPR,0,10.1101/2023.02.15.528598,eLife,journal-publication,1,0
+87536,no_reachable_PPR,0,10.1101/2023.02.15.528598,elife,review,3,1
+88658,no_reachable_PPR,0,10.1101/2023.01.25.525547,eLife,journal-publication,1,0
+88658,no_reachable_PPR,0,10.1101/2023.01.25.525547,elife,review,10,1
+99340,publication_only,0,10.1101/2024.05.29.596366,eLife,journal-publication,1,0
+99340,publication_only,0,10.1101/2024.05.29.596366,elife,review,9,1
+90192,publication_only,0,10.1101/2023.07.26.550758,eLife,journal-publication,1,0
+90192,publication_only,0,10.1101/2023.07.26.550758,elife,review,8,1
+93013,publication_only,0,10.1101/2023.09.10.557040,eLife,journal-publication,1,0
+93013,publication_only,0,10.1101/2023.09.10.557040,elife,review,8,1
+93194,publication_only,0,10.1101/2023.09.29.560096,eLife,journal-publication,1,0
+93194,publication_only,0,10.1101/2023.09.29.560096,elife,review,6,1
+106699,publication_only,0,10.1101/2024.12.09.627495,eLife,journal-publication,1,0
+106699,publication_only,0,10.1101/2024.12.09.627495,elife,review,7,1
+110040,publication_only,0,10.64898/2025.12.08.692904,eLife,journal-publication,1,0
+110040,publication_only,0,10.64898/2025.12.08.692904,elife,review,9,1
+86990,publication_only,0,10.1101/2023.02.22.529580,eLife,journal-publication,1,0
+86990,publication_only,0,10.1101/2023.02.22.529580,elife,review,5,1
+89794,publication_only,0,10.1101/2022.08.30.505927,eLife,journal-publication,1,0
+89794,publication_only,0,10.1101/2022.08.30.505927,elife,review,8,1
+91360,publication_only,0,10.1101/468306,eLife,journal-publication,1,0
+91360,publication_only,0,10.1101/468306,elife,review,7,1
+89136,publication_only,0,10.1101/2023.05.03.539244,eLife,journal-publication,1,0
+89136,publication_only,0,10.1101/2023.05.03.539244,elife,review,10,1
+96953,publication_only,0,10.1101/2024.01.29.577824,eLife,journal-publication,1,0
+96953,publication_only,0,10.1101/2024.01.29.577824,elife,review,11,1
+97916,publication_only,0,10.1101/2023.10.18.562990,eLife,journal-publication,1,0
+97916,publication_only,0,10.1101/2023.10.18.562990,elife,review,9,1
+103797,publication_only,0,10.1101/2024.09.20.613996,eLife,journal-publication,1,0
+103797,publication_only,0,10.1101/2024.09.20.613996,elife,review,7,1
+109248,publication_only,0,10.1101/2025.10.07.680892,eLife,journal-publication,1,0
+109248,publication_only,0,10.1101/2025.10.07.680892,elife,review,4,1
+87517,publication_only,0,10.1101/2022.10.26.513902,eLife,journal-publication,1,0
+87517,publication_only,0,10.1101/2022.10.26.513902,elife,review,5,1
+96028,publication_only,0,10.1101/2024.02.06.579062,eLife,journal-publication,1,0
+96028,publication_only,0,10.1101/2024.02.06.579062,elife,review,11,1
+108724,publication_only,0,10.1101/2025.08.20.671236,eLife,journal-publication,1,0
+108724,publication_only,0,10.1101/2025.08.20.671236,elife,review,8,1
+108207,publication_only,0,10.1101/2025.07.14.664678,eLife,journal-publication,1,0
+108207,publication_only,0,10.1101/2025.07.14.664678,elife,review,5,1
+90046,publication_only,0,10.1101/2023.07.18.549563,eLife,journal-publication,1,0
+90046,publication_only,0,10.1101/2023.07.18.549563,elife,review,10,1
+88299,publication_only,0,10.1101/2021.12.23.474010,eLife,journal-publication,1,0
+88299,publication_only,0,10.1101/2021.12.23.474010,elife,review,9,1
+100832,reachable_PPR_no_elife_event,0,10.1101/2024.05.20.594981,eLife,journal-publication,1,0
+100832,reachable_PPR_no_elife_event,0,10.1101/2024.05.20.594981,elife,review,8,1
+107745,reachable_PPR_no_elife_event,0,10.1101/2025.06.09.658561,elife,review,3,1
+96691,reachable_PPR_no_elife_event,0,10.1101/2024.02.20.581121,eLife,journal-publication,1,0
+96691,reachable_PPR_no_elife_event,0,10.1101/2024.02.20.581121,elife,review,14,1
+92406,reachable_PPR_no_elife_event,0,10.1101/2023.08.25.554866,eLife,journal-publication,1,0
+92406,reachable_PPR_no_elife_event,0,10.1101/2023.08.25.554866,elife,review,11,1
+105314,reachable_PPR_no_elife_event,0,10.1101/2024.11.14.623618,elife,review,10,1
+100722,reachable_PPR_no_elife_event,0,10.1101/2024.02.18.580873,eLife,journal-publication,1,0
+100722,reachable_PPR_no_elife_event,0,10.1101/2024.02.18.580873,elife,review,13,1
+107597,reachable_PPR_no_elife_event,0,10.1101/2025.06.19.660595,elife,review,3,1
+88895,reachable_PPR_no_elife_event,0,10.1101/2023.04.24.537925,eLife,journal-publication,1,0
+88895,reachable_PPR_no_elife_event,0,10.1101/2023.04.24.537925,elife,review,10,1
+93766,reachable_PPR_no_elife_event,0,10.1101/2023.09.05.556437,eLife,journal-publication,1,0
+93766,reachable_PPR_no_elife_event,0,10.1101/2023.09.05.556437,elife,review,10,1
+93079,reachable_PPR_no_elife_event,0,10.1101/2023.10.16.562597,eLife,journal-publication,1,0
+93079,reachable_PPR_no_elife_event,0,10.1101/2023.10.16.562597,elife,review,7,1
+101221,reachable_PPR_no_elife_event,0,10.1101/2024.07.02.601733,eLife,journal-publication,1,0
+101221,reachable_PPR_no_elife_event,0,10.1101/2024.07.02.601733,elife,review,6,1
+88551,reachable_PPR_no_elife_event,0,10.1101/2023.02.21.529200,eLife,journal-publication,1,0
+88551,reachable_PPR_no_elife_event,0,10.1101/2023.02.21.529200,elife,review,11,1
+112139,reachable_PPR_no_elife_event,0,10.64898/2025.12.29.696944,review commons,author-response,1,0
+112139,reachable_PPR_no_elife_event,0,10.64898/2025.12.29.696944,review commons,review,2,0
+112139,reachable_PPR_no_elife_event,0,10.64898/2025.12.29.696944,review commons,reviews-summary,1,0
+109146,reachable_PPR_no_elife_event,0,10.1101/2025.09.12.675753,eLife,journal-publication,1,0
+109146,reachable_PPR_no_elife_event,0,10.1101/2025.09.12.675753,elife,review,7,1
+103068,reachable_PPR_no_elife_event,0,10.1101/2024.08.21.608680,eLife,journal-publication,1,0
+103068,reachable_PPR_no_elife_event,0,10.1101/2024.08.21.608680,elife,review,10,1
+88830,review_no_url,0,10.1101/2022.11.14.515727,eLife,journal-publication,1,0
+88830,review_no_url,0,10.1101/2022.11.14.515727,elife,review,4,1
+90674,review_no_url,0,10.1101/2023.07.03.547448,eLife,journal-publication,1,0
+90674,review_no_url,0,10.1101/2023.07.03.547448,elife,review,2,1
+106062,review_no_url,0,10.1101/2024.12.10.627344,eLife,journal-publication,1,0
+106062,review_no_url,0,10.1101/2024.12.10.627344,elife,review,12,1
+90523,review_no_url,0,10.1101/2023.06.23.546330,eLife,journal-publication,1,0
+90523,review_no_url,0,10.1101/2023.06.23.546330,elife,review,3,1
+104802,review_no_url,0,10.1101/2021.12.09.21267544,eLife,journal-publication,1,0
+104802,review_no_url,0,10.1101/2021.12.09.21267544,elife,review,3,1
+105236,review_no_url,0,10.1101/2024.11.12.623186,eLife,journal-publication,1,0
+105236,review_no_url,0,10.1101/2024.11.12.623186,elife,review,10,1
+111773,review_no_url,0,10.1101/2025.07.23.666417,elife,review,6,1
+94916,review_no_url,0,10.1101/2023.08.11.552915,eLife,journal-publication,1,0
+94916,review_no_url,0,10.1101/2023.08.11.552915,elife,review,3,1
+88366,review_no_url,0,10.1101/2023.04.11.536494,eLife,journal-publication,1,0
+88366,review_no_url,0,10.1101/2023.04.11.536494,elife,review,3,1
+99000,review_no_url,0,10.1101/2024.05.06.592731,eLife,journal-publication,1,0
+99000,review_no_url,0,10.1101/2024.05.06.592731,elife,review,7,1
+110073,review_no_url,0,10.64898/2025.12.06.692720,elife,review,7,1
+102622,review_no_url,0,10.1101/2024.07.19.604245,eLife,journal-publication,1,0
+102622,review_no_url,0,10.1101/2024.07.19.604245,elife,review,4,1
+93983,review_no_url,0,10.1101/2023.10.15.562395,eLife,journal-publication,1,0
+93983,review_no_url,0,10.1101/2023.10.15.562395,elife,review,3,1
+94075,review_no_url,0,10.1101/2023.11.01.565230,eLife,journal-publication,1,0
+94075,review_no_url,0,10.1101/2023.11.01.565230,elife,review,2,1
+88049,review_no_url,0,10.1101/2022.05.05.490833,eLife,journal-publication,1,0
+88049,review_no_url,0,10.1101/2022.05.05.490833,elife,review,4,1
+91645,review_no_url,0,10.1101/2023.06.01.543292,eLife,journal-publication,1,0
+91645,review_no_url,0,10.1101/2023.06.01.543292,elife,review,5,1
+88822,review_no_url,0,10.1101/2023.04.20.537607,eLife,journal-publication,1,0
+88822,review_no_url,0,10.1101/2023.04.20.537607,elife,review,4,1
+89068,review_no_url,0,10.1101/2023.06.12.23291280,eLife,journal-publication,1,0
+89068,review_no_url,0,10.1101/2023.06.12.23291280,elife,review,3,1
+89424,review_no_url,0,10.1101/2023.05.11.540467,eLife,journal-publication,1,0
+89424,review_no_url,0,10.1101/2023.05.11.540467,elife,review,3,1
+99502,review_no_url,0,10.1101/2024.05.16.594485,eLife,journal-publication,1,0
+99502,review_no_url,0,10.1101/2024.05.16.594485,elife,review,6,1
+106228,review_with_DOI_url,0,10.1101/2024.09.19.613828,eLife,journal-publication,1,0
+106228,review_with_DOI_url,0,10.1101/2024.09.19.613828,elife,review,5,1
+106228,review_with_DOI_url,0,10.1101/2024.09.19.613828,elife,reviews-summary,1,1
+106228,review_with_DOI_url,0,10.1101/2024.09.19.613828,review commons,author-response,1,0
+106228,review_with_DOI_url,0,10.1101/2024.09.19.613828,review commons,review,3,0
+106228,review_with_DOI_url,0,10.1101/2024.09.19.613828,review commons,reviews-summary,1,0
+110952,review_with_DOI_url,0,10.1101/2025.09.19.677380,eLife,journal-publication,1,0
+110952,review_with_DOI_url,0,10.1101/2025.09.19.677380,elife,review,9,1
+110952,review_with_DOI_url,0,10.1101/2025.09.19.677380,review commons,author-response,1,0
+110952,review_with_DOI_url,0,10.1101/2025.09.19.677380,review commons,review,3,0
+110952,review_with_DOI_url,0,10.1101/2025.09.19.677380,review commons,reviews-summary,1,0
+110400,review_with_DOI_url,0,10.1101/2024.09.23.614335,eLife,journal-publication,1,0
+110400,review_with_DOI_url,0,10.1101/2024.09.23.614335,elife,review,5,1
+110400,review_with_DOI_url,0,10.1101/2024.09.23.614335,review commons,author-response,1,0
+110400,review_with_DOI_url,0,10.1101/2024.09.23.614335,review commons,review,3,0
+110400,review_with_DOI_url,0,10.1101/2024.09.23.614335,review commons,reviews-summary,1,0
+109534,review_with_DOI_url,0,10.1101/2025.01.13.632747,eLife,journal-publication,1,0
+109534,review_with_DOI_url,0,10.1101/2025.01.13.632747,elife,review,8,1
+109534,review_with_DOI_url,0,10.1101/2025.01.13.632747,review commons,author-response,1,0
+109534,review_with_DOI_url,0,10.1101/2025.01.13.632747,review commons,review,3,0
+109534,review_with_DOI_url,0,10.1101/2025.01.13.632747,review commons,reviews-summary,1,0
+107813,review_with_DOI_url,0,10.1101/2024.02.09.579276,eLife,journal-publication,1,0
+107813,review_with_DOI_url,0,10.1101/2024.02.09.579276,elife,review,11,1
+107813,review_with_DOI_url,0,10.1101/2024.02.09.579276,review commons,author-response,1,0
+107813,review_with_DOI_url,0,10.1101/2024.02.09.579276,review commons,review,2,0
+107813,review_with_DOI_url,0,10.1101/2024.02.09.579276,review commons,reviews-summary,1,0
+109708,review_with_DOI_url,0,10.1101/2024.12.10.627280,eLife,journal-publication,1,0
+109708,review_with_DOI_url,0,10.1101/2024.12.10.627280,elife,review,9,1
+109708,review_with_DOI_url,0,10.1101/2024.12.10.627280,review commons,author-response,1,0
+109708,review_with_DOI_url,0,10.1101/2024.12.10.627280,review commons,review,3,0
+109708,review_with_DOI_url,0,10.1101/2024.12.10.627280,review commons,reviews-summary,1,0
+108438,review_with_DOI_url,0,10.1101/2024.02.19.580416,eLife,journal-publication,1,0
+108438,review_with_DOI_url,0,10.1101/2024.02.19.580416,elife,review,10,1
+108438,review_with_DOI_url,0,10.1101/2024.02.19.580416,review commons,author-response,1,0
+108438,review_with_DOI_url,0,10.1101/2024.02.19.580416,review commons,review,4,0
+108438,review_with_DOI_url,0,10.1101/2024.02.19.580416,review commons,reviews-summary,1,0
+110117,review_with_DOI_url,0,10.1101/2025.08.28.672825,eLife,journal-publication,1,0
+110117,review_with_DOI_url,0,10.1101/2025.08.28.672825,elife,review,10,1
+110117,review_with_DOI_url,0,10.1101/2025.08.28.672825,review commons,author-response,1,0
+110117,review_with_DOI_url,0,10.1101/2025.08.28.672825,review commons,review,3,0
+110117,review_with_DOI_url,0,10.1101/2025.08.28.672825,review commons,reviews-summary,1,0
+111115,review_with_DOI_url,0,10.1101/2025.03.24.644963,elife,review,10,1
+111115,review_with_DOI_url,0,10.1101/2025.03.24.644963,review commons,author-response,1,0
+111115,review_with_DOI_url,0,10.1101/2025.03.24.644963,review commons,review,4,0
+111115,review_with_DOI_url,0,10.1101/2025.03.24.644963,review commons,reviews-summary,1,0
+106537,review_with_DOI_url,0,10.1101/2024.12.04.625416,eLife,journal-publication,1,0
+106537,review_with_DOI_url,0,10.1101/2024.12.04.625416,elife,review,6,1
+106537,review_with_DOI_url,0,10.1101/2024.12.04.625416,elife,reviews-summary,1,1
+106537,review_with_DOI_url,0,10.1101/2024.12.04.625416,review commons,author-response,1,0
+106537,review_with_DOI_url,0,10.1101/2024.12.04.625416,review commons,review,3,0
+106537,review_with_DOI_url,0,10.1101/2024.12.04.625416,review commons,reviews-summary,1,0
+108369,review_with_DOI_url,0,10.1101/2025.03.13.643064,eLife,journal-publication,1,0
+108369,review_with_DOI_url,0,10.1101/2025.03.13.643064,elife,review,8,1
+108369,review_with_DOI_url,0,10.1101/2025.03.13.643064,review commons,author-response,1,0
+108369,review_with_DOI_url,0,10.1101/2025.03.13.643064,review commons,review,3,0
+108369,review_with_DOI_url,0,10.1101/2025.03.13.643064,review commons,reviews-summary,1,0
+109447,review_with_DOI_url,0,10.1101/2025.01.07.631736,eLife,journal-publication,1,0
+109447,review_with_DOI_url,0,10.1101/2025.01.07.631736,elife,review,5,1
+109447,review_with_DOI_url,0,10.1101/2025.01.07.631736,review commons,author-response,1,0
+109447,review_with_DOI_url,0,10.1101/2025.01.07.631736,review commons,review,4,0
+109447,review_with_DOI_url,0,10.1101/2025.01.07.631736,review commons,reviews-summary,1,0
+106316,review_with_DOI_url,0,10.1101/2024.01.08.574679,eLife,journal-publication,1,0
+106316,review_with_DOI_url,0,10.1101/2024.01.08.574679,elife,review,5,1
+106316,review_with_DOI_url,0,10.1101/2024.01.08.574679,elife,reviews-summary,1,1
+106316,review_with_DOI_url,0,10.1101/2024.01.08.574679,review commons,author-response,1,0
+106316,review_with_DOI_url,0,10.1101/2024.01.08.574679,review commons,review,3,0
+106316,review_with_DOI_url,0,10.1101/2024.01.08.574679,review commons,reviews-summary,1,0
+107534,review_with_DOI_url,0,10.1101/2024.09.11.612529,eLife,journal-publication,1,0
+107534,review_with_DOI_url,0,10.1101/2024.09.11.612529,elife,review,5,1
+107534,review_with_DOI_url,0,10.1101/2024.09.11.612529,review commons,author-response,1,0
+107534,review_with_DOI_url,0,10.1101/2024.09.11.612529,review commons,review,3,0
+107534,review_with_DOI_url,0,10.1101/2024.09.11.612529,review commons,reviews-summary,1,0
+102915,review_with_DOI_url,0,10.1101/2024.04.04.588006,eLife,journal-publication,1,0
+102915,review_with_DOI_url,0,10.1101/2024.04.04.588006,elife,review,6,1
+102915,review_with_DOI_url,0,10.1101/2024.04.04.588006,review commons,author-response,1,0
+102915,review_with_DOI_url,0,10.1101/2024.04.04.588006,review commons,review,3,0
+102915,review_with_DOI_url,0,10.1101/2024.04.04.588006,review commons,reviews-summary,1,0
+91406,review_with_DOI_url,0,10.1101/2022.05.05.490846,eLife,journal-publication,1,0
+91406,review_with_DOI_url,0,10.1101/2022.05.05.490846,elife,review,4,1
+91406,review_with_DOI_url,0,10.1101/2022.05.05.490846,elife,reviews-summary,1,1
+91406,review_with_DOI_url,0,10.1101/2022.05.05.490846,review commons,author-response,2,0
+91406,review_with_DOI_url,0,10.1101/2022.05.05.490846,review commons,review,2,0
+91406,review_with_DOI_url,0,10.1101/2022.05.05.490846,review commons,reviews-summary,1,0
+106415,review_with_DOI_url,0,10.1101/2024.11.20.624589,eLife,journal-publication,1,0
+106415,review_with_DOI_url,0,10.1101/2024.11.20.624589,elife,review,10,1
+106415,review_with_DOI_url,0,10.1101/2024.11.20.624589,elife,reviews-summary,1,1
+106415,review_with_DOI_url,0,10.1101/2024.11.20.624589,review commons,author-response,1,0
+106415,review_with_DOI_url,0,10.1101/2024.11.20.624589,review commons,review,3,0
+106415,review_with_DOI_url,0,10.1101/2024.11.20.624589,review commons,reviews-summary,1,0
+106469,review_with_DOI_url,0,10.1101/2024.07.23.604790,eLife,journal-publication,1,0
+106469,review_with_DOI_url,0,10.1101/2024.07.23.604790,elife,review,5,1
+106469,review_with_DOI_url,0,10.1101/2024.07.23.604790,elife,reviews-summary,1,1
+106469,review_with_DOI_url,0,10.1101/2024.07.23.604790,review commons,author-response,1,0
+106469,review_with_DOI_url,0,10.1101/2024.07.23.604790,review commons,review,3,0
+106469,review_with_DOI_url,0,10.1101/2024.07.23.604790,review commons,reviews-summary,1,0
+106503,review_with_DOI_url,0,10.1101/2023.11.27.568781,eLife,journal-publication,1,0
+106503,review_with_DOI_url,0,10.1101/2023.11.27.568781,elife,review,10,1
+106503,review_with_DOI_url,0,10.1101/2023.11.27.568781,elife,reviews-summary,1,1
+106503,review_with_DOI_url,0,10.1101/2023.11.27.568781,review commons,author-response,1,0
+106503,review_with_DOI_url,0,10.1101/2023.11.27.568781,review commons,review,3,0
+106503,review_with_DOI_url,0,10.1101/2023.11.27.568781,review commons,reviews-summary,1,0
+111131,review_with_DOI_url,0,10.1101/2025.10.16.682983,eLife,journal-publication,1,0
+111131,review_with_DOI_url,0,10.1101/2025.10.16.682983,elife,review,5,1
+111131,review_with_DOI_url,0,10.1101/2025.10.16.682983,review commons,author-response,1,0
+111131,review_with_DOI_url,0,10.1101/2025.10.16.682983,review commons,review,3,0
+111131,review_with_DOI_url,0,10.1101/2025.10.16.682983,review commons,reviews-summary,1,0
+104181,review_with_generic_url,0,10.1101/2024.11.08.622646,,journal-publication,1,0
+104181,review_with_generic_url,0,10.1101/2024.11.08.622646,elife,review,13,1
+108882,review_with_generic_url,0,10.1101/2025.06.19.658006,eLife,journal-publication,1,0
+108882,review_with_generic_url,0,10.1101/2025.06.19.658006,elife,review,7,1
+87880,review_with_generic_url,0,10.1101/2023.03.17.533056,eLife,journal-publication,1,0
+87880,review_with_generic_url,0,10.1101/2023.03.17.533056,elife,review,11,1
+101391,review_with_generic_url,0,10.1101/2024.08.12.607566,eLife,journal-publication,1,0
+101391,review_with_generic_url,0,10.1101/2024.08.12.607566,elife,review,9,1
+97321,review_with_generic_url,0,10.1101/2024.05.28.596183,elife,review,9,1
+107938,review_with_generic_url,0,10.1101/2025.08.01.668239,eLife,journal-publication,1,0
+107938,review_with_generic_url,0,10.1101/2025.08.01.668239,elife,review,7,1
+88819,review_with_generic_url,0,10.1101/2023.04.19.535725,eLife,journal-publication,1,0
+88819,review_with_generic_url,0,10.1101/2023.04.19.535725,elife,review,7,1
+99173,review_with_generic_url,0,10.1101/2024.05.20.594923,eLife,journal-publication,1,0
+99173,review_with_generic_url,0,10.1101/2024.05.20.594923,elife,review,9,1
+100928,review_with_generic_url,0,10.1101/2024.07.10.602886,eLife,journal-publication,1,0
+100928,review_with_generic_url,0,10.1101/2024.07.10.602886,elife,review,14,1
+103615,review_with_generic_url,0,10.1101/2024.10.20.619055,eLife,journal-publication,1,0
+103615,review_with_generic_url,0,10.1101/2024.10.20.619055,elife,review,12,1
+88762,review_with_generic_url,0,10.1101/2023.02.22.527901,eLife,journal-publication,1,0
+88762,review_with_generic_url,0,10.1101/2023.02.22.527901,elife,review,8,1
+90136,review_with_generic_url,0,10.1101/2023.06.15.545141,eLife,journal-publication,1,0
+90136,review_with_generic_url,0,10.1101/2023.06.15.545141,elife,review,10,1
+106975,review_with_generic_url,0,10.1101/2025.04.18.649563,eLife,journal-publication,1,0
+106975,review_with_generic_url,0,10.1101/2025.04.18.649563,elife,review,11,1
+93749,review_with_generic_url,0,10.1101/2022.10.19.512823,eLife,journal-publication,1,0
+93749,review_with_generic_url,0,10.1101/2022.10.19.512823,elife,review,9,1
+94070,review_with_generic_url,0,10.1101/2023.11.17.567501,eLife,journal-publication,1,0
+94070,review_with_generic_url,0,10.1101/2023.11.17.567501,elife,review,10,1
+107070,review_with_generic_url,0,10.1101/2025.03.31.646342,eLife,journal-publication,1,0
+107070,review_with_generic_url,0,10.1101/2025.03.31.646342,elife,review,9,1
+90274,review_with_generic_url,0,10.1101/2021.10.29.466387,eLife,journal-publication,1,0
+90274,review_with_generic_url,0,10.1101/2021.10.29.466387,elife,review,8,1
+102823,review_with_generic_url,0,10.1101/2024.08.01.606213,eLife,journal-publication,1,0
+102823,review_with_generic_url,0,10.1101/2024.08.01.606213,elife,review,8,1
+109046,review_with_generic_url,0,10.1101/2025.09.03.674024,eLife,journal-publication,1,0
+109046,review_with_generic_url,0,10.1101/2025.09.03.674024,elife,review,7,1
+104045,review_with_generic_url,0,10.1101/2023.10.09.561466,eLife,journal-publication,1,0
+104045,review_with_generic_url,0,10.1101/2023.10.09.561466,elife,review,4,1

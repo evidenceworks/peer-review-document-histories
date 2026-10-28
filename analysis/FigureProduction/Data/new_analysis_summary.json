@@ -1,0 +1,268 @@
+{
+  "scope": "Descriptive results for the 60 endpoint-positive families in a fixed 120-family draw, with 20 per each of six unequal strata; pooled proportions are not population estimates.",
+  "raw_captures_verified": 340,
+  "sample_draw_reproduced": true,
+  "prior_source_object_rows_reproduced": 471,
+  "prior_endpoint_matches_and_precision_candidate_sets_reproduced": 462,
+  "families": 60,
+  "source_objects": 471,
+  "matched_rows": 458,
+  "matched_objects": 362,
+  "unmatched_objects": 109,
+  "evaluation_steps": 117,
+  "step_coverage": {
+    "complete": 91,
+    "none": 26
+  },
+  "step_EEB_coverage": [
+    {
+      "endpoint_step_state": "complete",
+      "EEB_step_state": "complete",
+      "steps": 91
+    },
+    {
+      "endpoint_step_state": "none",
+      "EEB_step_state": "none",
+      "steps": 20
+    },
+    {
+      "endpoint_step_state": "none",
+      "EEB_step_state": "complete",
+      "steps": 6
+    }
+  ],
+  "family_sequences": {
+    "complete/none": 18,
+    "complete": 10,
+    "complete/complete": 25,
+    "complete/none/none": 3,
+    "complete/complete/complete": 2,
+    "complete/complete/none": 2
+  },
+  "all_families_complete_initial_prefix": true,
+  "all_declared_chains_agree_with_strict_object_time_order": true,
+  "all_missing_objects_input_dois_were_queried": true,
+  "EEB_query_identifiers_verified_against_captured_URL_and_receipt": true,
+  "source_input_time_keys_with_multiple_objects": 0,
+  "source_objects_with_future_publication_date": 0,
+  "missing_steps_objects": 109,
+  "missing_steps_role_counts": {
+    "review-article": 57,
+    "evaluation-summary": 26,
+    "reply": 26
+  },
+  "missing_steps_EEB_counterpart_objects": 25,
+  "missing_steps_EEB_text_counterpart_objects": 25,
+  "missing_step_youngest_object_age_days": {
+    "minimum": 110,
+    "median": 652.5,
+    "maximum": 1174
+  },
+  "family_joint_coverage": [
+    {
+      "report_complete": 0,
+      "summary_complete": 0,
+      "reply_set_covered_including_empty": 0,
+      "families": 23
+    },
+    {
+      "report_complete": 1,
+      "summary_complete": 1,
+      "reply_set_covered_including_empty": 1,
+      "families": 37
+    }
+  ],
+  "families_without_source_replies": [
+    "104802",
+    "89068"
+  ],
+  "source_reply_positive_families": 58,
+  "complete_reply_positive_families": 35,
+  "conditional_unrepresented_lower_bound": 108,
+  "first_later_accounting": [
+    {
+      "stratum": "all",
+      "evaluation_step_position": "first",
+      "role": "review-article",
+      "source_objects": 145,
+      "endpoint_reconstructed": 145,
+      "EEB_counterpart_present": 145,
+      "families_with_source": 60
+    },
+    {
+      "stratum": "all",
+      "evaluation_step_position": "first",
+      "role": "evaluation-summary",
+      "source_objects": 60,
+      "endpoint_reconstructed": 60,
+      "EEB_counterpart_present": 60,
+      "families_with_source": 60
+    },
+    {
+      "stratum": "all",
+      "evaluation_step_position": "first",
+      "role": "reply",
+      "source_objects": 28,
+      "endpoint_reconstructed": 28,
+      "EEB_counterpart_present": 28,
+      "families_with_source": 28
+    },
+    {
+      "stratum": "all",
+      "evaluation_step_position": "first",
+      "role": "all_roles",
+      "source_objects": 233,
+      "endpoint_reconstructed": 233,
+      "EEB_counterpart_present": 233,
+      "families_with_source": 60
+    },
+    {
+      "stratum": "all",
+      "evaluation_step_position": "later",
+      "role": "review-article",
+      "source_objects": 124,
+      "endpoint_reconstructed": 67,
+      "EEB_counterpart_present": 80,
+      "families_with_source": 50
+    },
+    {
+      "stratum": "all",
+      "evaluation_step_position": "later",
+      "role": "evaluation-summary",
+      "source_objects": 57,
+      "endpoint_reconstructed": 31,
+      "EEB_counterpart_present": 37,
+      "families_with_source": 50
+    },
+    {
+      "stratum": "all",
+      "evaluation_step_position": "later",
+      "role": "reply",
+      "source_objects": 57,
+      "endpoint_reconstructed": 31,
+      "EEB_counterpart_present": 37,
+      "families_with_source": 50
+    },
+    {
+      "stratum": "all",
+      "evaluation_step_position": "later",
+      "role": "all_roles",
+      "source_objects": 238,
+      "endpoint_reconstructed": 129,
+      "EEB_counterpart_present": 154,
+      "families_with_source": 50
+    }
+  ],
+  "stage_partition": [
+    {
+      "stratum": "all",
+      "endpoint_state": "complete",
+      "EEB_key_correspondence_state": "complete",
+      "steps": 91,
+      "families": 60,
+      "source_objects": 362,
+      "source_reports": 212,
+      "source_summaries": 91,
+      "source_replies": 59,
+      "youngest_object_age_min_days": 67,
+      "youngest_object_age_median_days": 579,
+      "youngest_object_age_max_days": 1263
+    },
+    {
+      "stratum": "all",
+      "endpoint_state": "none",
+      "EEB_key_correspondence_state": "complete",
+      "steps": 6,
+      "families": 6,
+      "source_objects": 25,
+      "source_reports": 13,
+      "source_summaries": 6,
+      "source_replies": 6,
+      "youngest_object_age_min_days": 369,
+      "youngest_object_age_median_days": 391.5,
+      "youngest_object_age_max_days": 463
+    },
+    {
+      "stratum": "all",
+      "endpoint_state": "none",
+      "EEB_key_correspondence_state": "none",
+      "steps": 20,
+      "families": 18,
+      "source_objects": 84,
+      "source_reports": 44,
+      "source_summaries": 20,
+      "source_replies": 20,
+      "youngest_object_age_min_days": 110,
+      "youngest_object_age_median_days": 908.0,
+      "youngest_object_age_max_days": 1174
+    },
+    {
+      "stratum": "all",
+      "endpoint_state": "partial",
+      "EEB_key_correspondence_state": "partial",
+      "steps": 0,
+      "families": 0,
+      "source_objects": 0,
+      "source_reports": 0,
+      "source_summaries": 0,
+      "source_replies": 0,
+      "youngest_object_age_min_days": "",
+      "youngest_object_age_median_days": "",
+      "youngest_object_age_max_days": ""
+    }
+  ],
+  "missing_steps_per_family": {
+    "0": 37,
+    "1": 20,
+    "2": 3
+  },
+  "native_bridge_union": {
+    "frame": 3547,
+    "native": 2312,
+    "bridge": 2898,
+    "union": 2900,
+    "native_only_families": [
+      "111419",
+      "89381"
+    ]
+  },
+  "document_presence_task": [
+    {
+      "role": "review-article",
+      "sample_family_denominator": 60,
+      "source_present_families": 60,
+      "reconstructed_present_families": 60,
+      "source_present_reconstructed_absent_families": 0,
+      "source_present_reconstructed_absent_ids": "[]",
+      "affected_families_with_unresolved_rows": 0,
+      "maximum_reconstructed_presence_with_favorable_unresolved_rows": 60,
+      "complete_source_positive_family_sets": 37,
+      "empty_source_family_sets": 0
+    },
+    {
+      "role": "evaluation-summary",
+      "sample_family_denominator": 60,
+      "source_present_families": 60,
+      "reconstructed_present_families": 60,
+      "source_present_reconstructed_absent_families": 0,
+      "source_present_reconstructed_absent_ids": "[]",
+      "affected_families_with_unresolved_rows": 0,
+      "maximum_reconstructed_presence_with_favorable_unresolved_rows": 60,
+      "complete_source_positive_family_sets": 37,
+      "empty_source_family_sets": 0
+    },
+    {
+      "role": "reply",
+      "sample_family_denominator": 60,
+      "source_present_families": 58,
+      "reconstructed_present_families": 45,
+      "source_present_reconstructed_absent_families": 13,
+      "source_present_reconstructed_absent_ids": "[\"88830\",\"90674\",\"106062\",\"90523\",\"94916\",\"88366\",\"102622\",\"93983\",\"94075\",\"88049\",\"88822\",\"89424\",\"99502\"]",
+      "affected_families_with_unresolved_rows": 0,
+      "maximum_reconstructed_presence_with_favorable_unresolved_rows": 45,
+      "complete_source_positive_family_sets": 35,
+      "empty_source_family_sets": 2
+    }
+  ],
+  "interpretation": "Publisher evaluation-step identity is the native DocMap step, ordered by its declared next-step chain and checked against object publication times. It is not an inferred independent review round. EEB presence uses an input-DOI and exact-time correspondence, not full-content equivalence. Absence is failure of this defined correspondence in captured query responses, not proof of an ingestion cause or source-wide unavailability."
+}

@@ -1,0 +1,256 @@
+{
+  "Figure_1": {
+    "unit": "matched endpoint row or distinct reconstructed source object as labeled",
+    "source_objects": {
+      "review-article": 212,
+      "evaluation-summary": 91,
+      "reply": 59
+    },
+    "matched_endpoint_rows": 458,
+    "unresolved_endpoint_rows": 4,
+    "EEB_single_counterpart_rows": 404,
+    "EEB_multiple_counterpart_rows": 54,
+    "matched_rows_without_URL": 239,
+    "connector_geometry": [
+      {
+        "start": [
+          0.155,
+          0.7
+        ],
+        "end": [
+          0.155,
+          0.58
+        ],
+        "head_tip": [
+          0.155,
+          0.58
+        ],
+        "shaft": "solid"
+      },
+      {
+        "start": [
+          0.155,
+          0.33
+        ],
+        "end": [
+          0.155,
+          0.215
+        ],
+        "head_tip": [
+          0.155,
+          0.215
+        ],
+        "shaft": "solid"
+      },
+      {
+        "start": [
+          0.305,
+          0.455
+        ],
+        "end": [
+          0.4,
+          0.455
+        ],
+        "head_tip": [
+          0.4,
+          0.455
+        ],
+        "shaft": "dashed"
+      },
+      {
+        "start": [
+          0.65,
+          0.455
+        ],
+        "end": [
+          0.735,
+          0.455
+        ],
+        "head_tip": [
+          0.735,
+          0.455
+        ],
+        "shaft": "dashed"
+      }
+    ]
+  },
+  "Figure_2": {
+    "unit": "article family",
+    "denominator": 3547,
+    "native": 2312,
+    "declared_link_addition": 588,
+    "operational_fallback_addition": 509,
+    "combined": 3409,
+    "residual_classes": [
+      {
+        "label": "Publication event only",
+        "positive": 210,
+        "total": 212
+      },
+      {
+        "label": "Preprint reachable,\nno eLife event",
+        "positive": 299,
+        "total": 376
+      },
+      {
+        "label": "No preprint reachable",
+        "positive": 3,
+        "total": 59
+      }
+    ],
+    "upstream_positives": 512
+  },
+  "Figure_3": {
+    "unit": "publisher evaluation step",
+    "families": 60,
+    "steps": 117,
+    "endpoint_recovered": 91,
+    "intermediate_only": 6,
+    "no_exact_intermediate_key": 20,
+    "empty_source_slots": 63
+  },
+  "Figure_4": {
+    "unit": "distinct source object",
+    "roles": [
+      {
+        "role": "review-article",
+        "label": "Referee reports",
+        "first": {
+          "numerator": 145,
+          "denominator": 145
+        },
+        "later": {
+          "numerator": 67,
+          "denominator": 124
+        },
+        "overall": {
+          "numerator": 212,
+          "denominator": 269
+        }
+      },
+      {
+        "role": "evaluation-summary",
+        "label": "Editorial summaries",
+        "first": {
+          "numerator": 60,
+          "denominator": 60
+        },
+        "later": {
+          "numerator": 31,
+          "denominator": 57
+        },
+        "overall": {
+          "numerator": 91,
+          "denominator": 117
+        }
+      },
+      {
+        "role": "reply",
+        "label": "Author replies",
+        "first": {
+          "numerator": 28,
+          "denominator": 28
+        },
+        "later": {
+          "numerator": 31,
+          "denominator": 57
+        },
+        "overall": {
+          "numerator": 59,
+          "denominator": 85
+        }
+      }
+    ]
+  },
+  "Figure_5": {
+    "rows": [
+      {
+        "precision": "original",
+        "label": "Original precision",
+        "retained": 458,
+        "ambiguous": 0,
+        "denominator": 458
+      },
+      {
+        "precision": "seconds",
+        "label": "Whole UTC seconds",
+        "retained": 273,
+        "ambiguous": 185,
+        "denominator": 458
+      },
+      {
+        "precision": "day",
+        "label": "UTC calendar day",
+        "retained": 5,
+        "ambiguous": 453,
+        "denominator": 458
+      }
+    ],
+    "distinct_objects": [
+      {
+        "role": "review-article",
+        "label": "Referee reports",
+        "conditions": [
+          {
+            "precision": "original",
+            "retained": 212,
+            "denominator": 212
+          },
+          {
+            "precision": "seconds",
+            "retained": 99,
+            "denominator": 212
+          },
+          {
+            "precision": "day",
+            "retained": 0,
+            "denominator": 212
+          }
+        ]
+      },
+      {
+        "role": "evaluation-summary",
+        "label": "Editorial summaries",
+        "conditions": [
+          {
+            "precision": "original",
+            "retained": 91,
+            "denominator": 91
+          },
+          {
+            "precision": "seconds",
+            "retained": 64,
+            "denominator": 91
+          },
+          {
+            "precision": "day",
+            "retained": 0,
+            "denominator": 91
+          }
+        ]
+      },
+      {
+        "role": "reply",
+        "label": "Author replies",
+        "conditions": [
+          {
+            "precision": "original",
+            "retained": 59,
+            "denominator": 59
+          },
+          {
+            "precision": "seconds",
+            "retained": 40,
+            "denominator": 59
+          },
+          {
+            "precision": "day",
+            "retained": 4,
+            "denominator": 59
+          }
+        ]
+      }
+    ],
+    "condition_relation": "discrete controlled precision settings; no time sequence or interval estimates"
+  }
+}

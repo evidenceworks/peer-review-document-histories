@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+*.log
+.DS_Store
+Thumbs.db
+figures_output/
+reproduction_output/
+private/
+*_private.zip
+*.sqlite3
+*.tmp

@@ -1,0 +1,141 @@
+{
+  "sample_families": 120,
+  "plan_sha256": "0bde2dc6e3cb36bb3924dc36030a8c66b6ef8acb73eef1faca882b8a854ed003",
+  "raw_captures": 340,
+  "raw_success": 340,
+  "raw_bytes": 8692921,
+  "EPMC_endpoints_checked": 100,
+  "EPMC_projection_exactly_equal_archived": 100,
+  "raw_row_keys": [
+    "dataOrigin",
+    "dateUpdated",
+    "doi",
+    "evaluationDate",
+    "evaluatorsList",
+    "id",
+    "logoUrl",
+    "platform",
+    "title",
+    "type",
+    "url"
+  ],
+  "epmc_row_status": {
+    "not_review_type": 50,
+    "matched": 458,
+    "no_source_date_match": 4
+  },
+  "source_role_counts_all": {
+    "review-article": 553,
+    "evaluation-summary": 237,
+    "reply": 167
+  },
+  "source_role_counts_matched_epmc_rows": {
+    "review-article": 255,
+    "evaluation-summary": 117,
+    "reply": 86
+  },
+  "unique_matched_source_role_counts": {
+    "review-article": 212,
+    "reply": 59,
+    "evaluation-summary": 91
+  },
+  "strata": [
+    {
+      "stratum": "no_reachable_PPR",
+      "N": 59,
+      "sample_n": 20,
+      "source_all_have_review_reports": 1,
+      "eeb_review_present_n": 2,
+      "epmc_review_present_n": 0,
+      "epmc_role_repaired_n": 0,
+      "epmc_author_reply_as_review_n": 0,
+      "epmc_summary_as_review_n": 0,
+      "full_source_summary_coverage_n": 0,
+      "retrieved_summary_disagrees_current_n": 0,
+      "source_outputs": 173,
+      "epmc_matched_rows": 0,
+      "epmc_unique_source_objects": 0
+    },
+    {
+      "stratum": "publication_only",
+      "N": 212,
+      "sample_n": 20,
+      "source_all_have_review_reports": 1,
+      "eeb_review_present_n": 20,
+      "epmc_review_present_n": 0,
+      "epmc_role_repaired_n": 0,
+      "epmc_author_reply_as_review_n": 0,
+      "epmc_summary_as_review_n": 0,
+      "full_source_summary_coverage_n": 0,
+      "retrieved_summary_disagrees_current_n": 0,
+      "source_outputs": 147,
+      "epmc_matched_rows": 0,
+      "epmc_unique_source_objects": 0
+    },
+    {
+      "stratum": "reachable_PPR_no_elife_event",
+      "N": 376,
+      "sample_n": 20,
+      "source_all_have_review_reports": 1,
+      "eeb_review_present_n": 14,
+      "epmc_review_present_n": 0,
+      "epmc_role_repaired_n": 0,
+      "epmc_author_reply_as_review_n": 0,
+      "epmc_summary_as_review_n": 0,
+      "full_source_summary_coverage_n": 0,
+      "retrieved_summary_disagrees_current_n": 0,
+      "source_outputs": 166,
+      "epmc_matched_rows": 0,
+      "epmc_unique_source_objects": 0
+    },
+    {
+      "stratum": "review_no_url",
+      "N": 30,
+      "sample_n": 20,
+      "source_all_have_review_reports": 1,
+      "eeb_review_present_n": 20,
+      "epmc_review_present_n": 20,
+      "epmc_role_repaired_n": 20,
+      "epmc_author_reply_as_review_n": 5,
+      "epmc_summary_as_review_n": 20,
+      "full_source_summary_coverage_n": 6,
+      "retrieved_summary_disagrees_current_n": 6,
+      "source_outputs": 141,
+      "epmc_matched_rows": 84,
+      "epmc_unique_source_objects": 76
+    },
+    {
+      "stratum": "review_with_DOI_url",
+      "N": 21,
+      "sample_n": 20,
+      "source_all_have_review_reports": 1,
+      "eeb_review_present_n": 20,
+      "epmc_review_present_n": 20,
+      "epmc_role_repaired_n": 20,
+      "epmc_author_reply_as_review_n": 20,
+      "epmc_summary_as_review_n": 20,
+      "full_source_summary_coverage_n": 15,
+      "retrieved_summary_disagrees_current_n": 4,
+      "source_outputs": 156,
+      "epmc_matched_rows": 150,
+      "epmc_unique_source_objects": 129
+    },
+    {
+      "stratum": "review_with_generic_url",
+      "N": 2849,
+      "sample_n": 20,
+      "source_all_have_review_reports": 1,
+      "eeb_review_present_n": 20,
+      "epmc_review_present_n": 20,
+      "epmc_role_repaired_n": 20,
+      "epmc_author_reply_as_review_n": 20,
+      "epmc_summary_as_review_n": 20,
+      "full_source_summary_coverage_n": 16,
+      "retrieved_summary_disagrees_current_n": 10,
+      "source_outputs": 174,
+      "epmc_matched_rows": 224,
+      "epmc_unique_source_objects": 157
+    }
+  ],
+  "interpretation": "Exploratory stratified mechanism audit. Counts are sample facts; unequal fractions preclude unweighted population percentages. Matching is based on declared original DOI and exact publication date-time (explicit hours, minutes, and seconds required; finer digits retained), without gold labels or current consensus. A matching timestamp is evidence of linkage, not proof of identical full text. The evaluated input DOI and version come from the evaluation step. Separately, reviewed-preprint containers come from downstream publishing steps. Container association does not prove the evaluation targets a VOR or another version."
+}

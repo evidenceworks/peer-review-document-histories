@@ -1,0 +1,5 @@
+role,source_objects,unique_matched_objects,not_uniquely_reconstructed,unrepresented_lower_bound,all_unresolved_allocated_favorably,family_respecting_lower_bound
+review-article,269,212,57,53,4,56
+evaluation-summary,117,91,26,22,4,25
+reply,85,59,26,22,4,25
+all_roles,471,362,109,105,4,108

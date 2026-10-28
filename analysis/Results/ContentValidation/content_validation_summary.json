@@ -1,0 +1,18 @@
+{
+  "plan_sha256": "927cbe207163e97d73a5b2f9828a4311904fd954c8db9321b7ab9cfd03ed31ee",
+  "selected_objects": 24,
+  "source_roles": {
+    "review-article": 8,
+    "evaluation-summary": 8,
+    "reply": 8
+  },
+  "successful_hash_verified_captures": 24,
+  "source_bytes_equal_eeb_text": 0,
+  "normalized_source_equals_eeb": 0,
+  "source_content_heading_role_agreement": 24,
+  "word_sequence_equal": 23,
+  "only_numeric_list_marker_differences": 1,
+  "minimum_word_sequence_similarity": 0.997540344,
+  "eeb_unique_normalized_text_one": 24,
+  "scope": "Eight fixed-seed matched objects per role. Validates sampled positive matches using independently fetched complete official HTML. Not a population accuracy estimate or a validation of scientific truth."
+}

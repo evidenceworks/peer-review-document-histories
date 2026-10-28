@@ -1,0 +1,64 @@
+{
+  "definition": "Provider presence is not evidence of a peer-review event; review-type presence is not a complete history or current consensus. A nonempty URL is not a validated content retrieval.",
+  "review_types": [
+    "referee-report",
+    "review",
+    "review-article",
+    "reviews-summary"
+  ],
+  "focal_n": 3547,
+  "endpoint_n": 4882,
+  "endpoint_elife_n": 4206,
+  "elife_rows": 43854,
+  "elife_type_counts": {
+    "review": 42881,
+    "journal-publication": 970,
+    "reviews-summary": 3
+  },
+  "elife_url_hosts": {
+    "NULL": 22348,
+    "biorxiv.org": 21382,
+    "doi.org": 124
+  },
+  "elife_missing_dates_by_type": {
+    "journal-publication": 707
+  },
+  "main": {
+    "population": "VOR_exact_MED",
+    "stratifier": "all",
+    "value": "all",
+    "n": 3547,
+    "native_provider": 2491,
+    "native_review": 2312,
+    "native_review_url": 2288,
+    "enriched_provider": 3112,
+    "enriched_review": 2900,
+    "enriched_review_url": 2870,
+    "native_publication_only": 179,
+    "enriched_publication_only": 212,
+    "provider_gain": 621,
+    "review_gain": 588,
+    "review_url_gain": 582,
+    "current_consensus_directly_identified": 0
+  },
+  "family_classes": {
+    "review_with_generic_url": 2849,
+    "reachable_PPR_no_elife_event": 376,
+    "publication_only": 212,
+    "no_reachable_PPR": 59,
+    "review_no_url": 30,
+    "review_with_DOI_url": 21
+  },
+  "review_internal_doi_matches_preprint": 42884,
+  "review_internal_doi_differs_preprint": 0,
+  "semantic_repeat_excess": 7973,
+  "input_hashes": {
+    "epmc_evaluations.json": "97532799d0f5f439f862b7de86b9dd82439068ecd9b0d0426d6f7b8a18149cc9",
+    "epmc_route_records.json": "22fa3c7d82fc33279c2f91bdc9ab92af866da9b4d053bd308dd2ec4d078ef518",
+    "epmc_route_details.json": "c6a9606e4d5456862c62d85c616a2c1bc61411a78cc225aa506ae653d10268aa",
+    "epmc_family_links.json": "671a49052885dad230247a322d6befc8fe271febd541dd1bdfee9a93b930700c",
+    "crossref_source_targets.json": "d5aeab9dd098d9ba70b77e28877d706b8e855d046d36414b7ff9323c0d899282",
+    "epmc_route_ledger.csv": "6cc55fd3171f766ab8c10d0e09426d99bf989a3f2d84a85d72dad90c5d6a3b00",
+    "corrected_source_states.json": "c9daa7b3ba882a7bc38eaf54c6273e76cffc06648908ea0b66a33ce07400500a"
+  }
+}

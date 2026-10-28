@@ -1,0 +1,38 @@
+{
+  "n": 120,
+  "captured": 120,
+  "abstained": 2,
+  "DOI_concordant": 118,
+  "strength_set_concordant": 118,
+  "discordances": [
+    {
+      "family": "101069",
+      "stratum": "no_reachable_PPR",
+      "status": 200,
+      "selected_production_version": 1,
+      "selected_date": "2024-11-26T00:00:00Z",
+      "selected_assessment_doi": "",
+      "selected_strength": "",
+      "gold_assessment_doi": "10.7554/elife.101069.3.sa0",
+      "gold_labels": "convincing",
+      "doi_concordance": 0,
+      "strength_concordance": 0,
+      "abstained": 1
+    },
+    {
+      "family": "96953",
+      "stratum": "publication_only",
+      "status": 200,
+      "selected_production_version": 1,
+      "selected_date": "2024-11-21T00:00:00Z",
+      "selected_assessment_doi": "",
+      "selected_strength": "",
+      "gold_assessment_doi": "10.7554/elife.96953.3.sa0",
+      "gold_labels": "compelling|convincing",
+      "doi_concordance": 0,
+      "strength_concordance": 0,
+      "abstained": 1
+    }
+  ],
+  "scope": "Publisher API comparator, same institutional source as JATS; not independent adjudication or population-wide estimate. Live capture vs frozen reference; selector did not use reference DOI or grade."
+}

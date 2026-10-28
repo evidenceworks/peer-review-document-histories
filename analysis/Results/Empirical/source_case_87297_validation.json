@@ -1,0 +1,243 @@
+{
+  "xml_files_verified_against_original_hashes": 5,
+  "successful_captures": [
+    {
+      "key": "elife-preprint-87297-v1.xml",
+      "sha256": "a13e9a443b018bf32f50d0cb1d4913a70fdf90d64c132fcaea0df315690d2a25",
+      "bytes": 142543
+    },
+    {
+      "key": "elife-preprint-87297-v2.xml",
+      "sha256": "eed5ac736632f31a53e582824ff8431b5b349e29540d171521bf6c419f3e43ed",
+      "bytes": 343010
+    },
+    {
+      "key": "elife-preprint-87297-v3.xml",
+      "sha256": "5cc0e9b590a387924f22e9f102ea747350de24da42e190413e276393c748f018",
+      "bytes": 283430
+    },
+    {
+      "key": "elife-preprint-87297-v4.xml",
+      "sha256": "ddd82d0cbc04012842f8cffe7c05d53e2e1aa57e1033a3b6086c08aefb6300a9",
+      "bytes": 232801
+    },
+    {
+      "key": "elife-87297-v1.xml",
+      "sha256": "2781fa4c62693216eaaebd2ca1a21252b22cf169e5962674f3d3354f0cc5ec81",
+      "bytes": 285372
+    },
+    {
+      "key": "87297_api_versions.json",
+      "sha256": "e42b70a84c9065417da68cecf1d5de6db67e50e408d5ddb95b63ef8c2f851251",
+      "bytes": 2518
+    }
+  ],
+  "failed_requests_preserved": [
+    {
+      "key": "87297_api_latest.json",
+      "url": "https://api.elifesciences.org/articles/87297/versions/latest",
+      "status": 404
+    }
+  ],
+  "same_scientific_version_doi": "10.7554/elife.87297.4",
+  "RP_consensus_doi": "10.7554/elife.87297.4.sa1",
+  "VOR_consensus_doi": "10.7554/elife.87297.4.sa0",
+  "normalized_consensus_prose_equal": true,
+  "evidence_strength_both": [
+    "solid"
+  ],
+  "consensus_and_reviewer_DOI_roles_swapped_between_representations": true,
+  "publisher_API_current_matches_VOR": true,
+  "representations": [
+    {
+      "file": "elife-preprint-87297-v1.xml",
+      "version_doi": "10.7554/elife.87297.1",
+      "source_sha256": "a13e9a443b018bf32f50d0cb1d4913a70fdf90d64c132fcaea0df315690d2a25",
+      "objects": [
+        {
+          "title": "eLife Assessment",
+          "doi": "10.7554/elife.87297.1.sa3",
+          "xml_article_type": "editor-report",
+          "role_from_title": "consensus",
+          "evidence_strength": [
+            "inadequate"
+          ],
+          "normalized_body_sha256": "be120a969d1bd27dc9c44dc6efa7fdb81ae486c89198bb4054c1896a446fd129"
+        },
+        {
+          "title": "Reviewer 3 (Public Review):",
+          "doi": "10.7554/elife.87297.1.sa0",
+          "xml_article_type": "referee-report",
+          "role_from_title": "reviewer_report",
+          "evidence_strength": [],
+          "normalized_body_sha256": "a50f1b2b91ef7a585dd8a27f5afa2b30253497c6ddfe1ecd80695c62a0ab0bb3"
+        },
+        {
+          "title": "Reviewer 2 (Public Review):",
+          "doi": "10.7554/elife.87297.1.sa1",
+          "xml_article_type": "referee-report",
+          "role_from_title": "reviewer_report",
+          "evidence_strength": [],
+          "normalized_body_sha256": "c5c77927c3f1009cfae4815be4b00604e8e0e8fc1d46398ff647e46bda08b9f5"
+        },
+        {
+          "title": "Reviewer 1 (Public Review):",
+          "doi": "10.7554/elife.87297.1.sa2",
+          "xml_article_type": "referee-report",
+          "role_from_title": "reviewer_report",
+          "evidence_strength": [],
+          "normalized_body_sha256": "ee7cf190becce70e8dfdadd8dc49916588cde7f0a6198b6f1de785392e9b6785"
+        }
+      ]
+    },
+    {
+      "file": "elife-preprint-87297-v2.xml",
+      "version_doi": "10.7554/elife.87297.2",
+      "source_sha256": "eed5ac736632f31a53e582824ff8431b5b349e29540d171521bf6c419f3e43ed",
+      "objects": [
+        {
+          "title": "eLife Assessment",
+          "doi": "10.7554/elife.87297.2.sa3",
+          "xml_article_type": "editor-report",
+          "role_from_title": "consensus",
+          "evidence_strength": [
+            "inadequate"
+          ],
+          "normalized_body_sha256": "be120a969d1bd27dc9c44dc6efa7fdb81ae486c89198bb4054c1896a446fd129"
+        },
+        {
+          "title": "Reviewer #1 (Public Review):",
+          "doi": "10.7554/elife.87297.2.sa2",
+          "xml_article_type": "referee-report",
+          "role_from_title": "reviewer_report",
+          "evidence_strength": [],
+          "normalized_body_sha256": "25010156cc7bbe0ef0ef382d2695459c4b3a37493550fcd16898c1407a53a53c"
+        },
+        {
+          "title": "Reviewer #2 (Public Review):",
+          "doi": "10.7554/elife.87297.2.sa1",
+          "xml_article_type": "referee-report",
+          "role_from_title": "reviewer_report",
+          "evidence_strength": [],
+          "normalized_body_sha256": "95248a269efd82cef38ce1f01c8a2a667638aac483916364926a0d213ed4a85b"
+        },
+        {
+          "title": "Reviewer #3 (Public Review):",
+          "doi": "10.7554/elife.87297.2.sa0",
+          "xml_article_type": "referee-report",
+          "role_from_title": "reviewer_report",
+          "evidence_strength": [],
+          "normalized_body_sha256": "d2be3fff6165023d66cc97326d2ab3c9ecdb2f89162ae130eaeb420928a2e1d4"
+        },
+        {
+          "title": "Author Response",
+          "doi": "10.7554/elife.87297.2.sa4",
+          "xml_article_type": "author-comment",
+          "role_from_title": "author_reply",
+          "evidence_strength": [],
+          "normalized_body_sha256": "8854e928ba4c3fed60a5bb6d85e4b4105fa4a59db3b0e85ae8223dd0f3337b06"
+        }
+      ]
+    },
+    {
+      "file": "elife-preprint-87297-v3.xml",
+      "version_doi": "10.7554/elife.87297.3",
+      "source_sha256": "5cc0e9b590a387924f22e9f102ea747350de24da42e190413e276393c748f018",
+      "objects": [
+        {
+          "title": "eLife Assessment",
+          "doi": "10.7554/elife.87297.3.sa1",
+          "xml_article_type": "editor-report",
+          "role_from_title": "consensus",
+          "evidence_strength": [
+            "inadequate"
+          ],
+          "normalized_body_sha256": "f9f59f9656af6213e06672dd54d2d4d823c6dbcfe2e187a7b22779dafedafd99"
+        },
+        {
+          "title": "Reviewer #1 (Public Review):",
+          "doi": "10.7554/elife.87297.3.sa0",
+          "xml_article_type": "referee-report",
+          "role_from_title": "reviewer_report",
+          "evidence_strength": [],
+          "normalized_body_sha256": "6c07335cf449454d0b20553b3541c7e2c09be42ca1152e88959cb80f810d16c2"
+        },
+        {
+          "title": "Author response:",
+          "doi": "10.7554/elife.87297.3.sa2",
+          "xml_article_type": "author-comment",
+          "role_from_title": "author_reply",
+          "evidence_strength": [],
+          "normalized_body_sha256": "9767737ddbb420118b98a09061f32999a5c684ab66d28a3faabc14ca2ad5bd6c"
+        }
+      ]
+    },
+    {
+      "file": "elife-preprint-87297-v4.xml",
+      "version_doi": "10.7554/elife.87297.4",
+      "source_sha256": "ddd82d0cbc04012842f8cffe7c05d53e2e1aa57e1033a3b6086c08aefb6300a9",
+      "objects": [
+        {
+          "title": "eLife Assessment",
+          "doi": "10.7554/elife.87297.4.sa1",
+          "xml_article_type": "editor-report",
+          "role_from_title": "consensus",
+          "evidence_strength": [
+            "solid"
+          ],
+          "normalized_body_sha256": "f85bc48e2b11de8981f40e87b71fd330521c8c460c94e53a3bdb6ff2e1c3f232"
+        },
+        {
+          "title": "Reviewer #1 (Public Review):",
+          "doi": "10.7554/elife.87297.4.sa0",
+          "xml_article_type": "referee-report",
+          "role_from_title": "reviewer_report",
+          "evidence_strength": [],
+          "normalized_body_sha256": "24dda52f60f630cc3388887487e651691eea128d36285a41238c7402c36bff6e"
+        },
+        {
+          "title": "Author response:",
+          "doi": "10.7554/elife.87297.4.sa2",
+          "xml_article_type": "author-comment",
+          "role_from_title": "author_reply",
+          "evidence_strength": [],
+          "normalized_body_sha256": "a4f940260a8838a11454820bd0bab7c485ac070c9cad81dbb2e3ebd3ac557147"
+        }
+      ]
+    },
+    {
+      "file": "elife-87297-v1.xml",
+      "version_doi": "10.7554/elife.87297.4",
+      "source_sha256": "2781fa4c62693216eaaebd2ca1a21252b22cf169e5962674f3d3354f0cc5ec81",
+      "objects": [
+        {
+          "title": "eLife assessment",
+          "doi": "10.7554/elife.87297.4.sa0",
+          "xml_article_type": "editor-report",
+          "role_from_title": "consensus",
+          "evidence_strength": [
+            "solid"
+          ],
+          "normalized_body_sha256": "f85bc48e2b11de8981f40e87b71fd330521c8c460c94e53a3bdb6ff2e1c3f232"
+        },
+        {
+          "title": "Reviewer #1 (Public Review):",
+          "doi": "10.7554/elife.87297.4.sa1",
+          "xml_article_type": "referee-report",
+          "role_from_title": "reviewer_report",
+          "evidence_strength": [],
+          "normalized_body_sha256": "47b8b88518e7db08ed67d2209c7ecae54114b5417d58856d3984cc6066515271"
+        },
+        {
+          "title": "Author response",
+          "doi": "10.7554/elife.87297.4.sa2",
+          "xml_article_type": "author-comment",
+          "role_from_title": "author_reply",
+          "evidence_strength": [],
+          "normalized_body_sha256": "f3c010f7eb1c6ded6847f4f59d4fdeec0c48828fbb411f66f426191225d77bd0"
+        }
+      ]
+    }
+  ],
+  "interpretation": "The same scientific-version DOI has a representation-dependent consensus identifier. Registry alignment with the RP representation is not by itself a wrong-category result. This targeted case does not establish a population rate of full-text identifier conflicts."
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "filename": "elife-preprint-100967-v1.xml",
+    "consensus_resolution": "identical_content_distinct_identifier_abstention",
+    "candidate_DOIs": "[[\"10.7554/elife.100967.1.sa2\"], [\"10.7554/elife.100967.1.sa6\"]]",
+    "source_sha256": "f0fddb6228e6a2bf1ebb1617c428e9f61b426f121eb24f37c14ef6d3f5ad2c95"
+  },
+  {
+    "filename": "elife-preprint-109502-v1.xml",
+    "consensus_resolution": "nonidentical_assessment_abstention",
+    "candidate_DOIs": "[[\"10.7554/elife.109502.1.sa7\"], [\"10.7554/elife.109502.1.sa8\"]]",
+    "source_sha256": "dca0fe9df3ccd09007411f6d00709320d994526564d6191063695aaaf3cf6a4b"
+  }
+]

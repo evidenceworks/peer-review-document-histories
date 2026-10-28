@@ -1,0 +1,9 @@
+family,epmc_record,epmc_id,source_doi,source_role,baseline_role,posthoc_role,opening_headings,in_fixed_matched_cohort,source_agreement
+90674,PPR/PPR685392,11849171,10.7554/elife.90674.1.sa0,review-article,,review-article,"[""Joint Public Review:""]",1,agree
+90674,PPR/PPR685392,7263550,10.7554/elife.90674.1.sa0,review-article,,review-article,"[""Joint Public Review:""]",1,agree
+94075,PPR/PPR753333,11884192,10.7554/elife.94075.1.sa0,review-article,,review-article,"[""Joint Public Review:""]",1,agree
+94075,PPR/PPR753333,7269059,10.7554/elife.94075.1.sa0,review-article,,review-article,"[""Joint Public Review:""]",1,agree
+87880,PPR/PPR632773,7259055,,,,review-article,"[""Joint Public Review:""]",0,not_scored_no_exact_source_match
+107938,PPR/PPR1061777,11841328,10.7554/elife.107938.2.sa1,review-article,,review-article,"[""Joint Public Review:""]",1,agree
+90274,PPR/PPR413694,11895201,10.7554/elife.90274.2.sa0,review-article,,review-article,"[""Joint Public Review:""]",1,agree
+90274,PPR/PPR413694,7292904,10.7554/elife.90274.2.sa0,review-article,,review-article,"[""Joint Public Review:""]",1,agree

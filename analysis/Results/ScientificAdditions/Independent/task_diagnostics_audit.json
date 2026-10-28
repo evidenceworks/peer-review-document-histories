@@ -1,0 +1,337 @@
+{
+  "status": "PASS",
+  "implementation": "Separate standard-library implementation; no PI or V4.2 analytical module imported.",
+  "sampling_exactly_reconstructed": true,
+  "raw_sample_captures_hash_verified": 340,
+  "calculations_completed_before_PI_outputs_read": true,
+  "comparison_to_PI": {
+    "independent_row_check.csv": {
+      "all_rows_and_columns_agree": true,
+      "rows": 462
+    },
+    "family_role_coverage.csv": {
+      "all_rows_and_columns_agree": true,
+      "rows": 120
+    },
+    "role_coverage_summary.csv": {
+      "all_rows_and_columns_agree": true,
+      "rows": 3
+    },
+    "coverage_bounds.csv": {
+      "all_rows_and_columns_agree": true,
+      "rows": 4
+    },
+    "heading_baseline.csv": {
+      "all_rows_and_columns_agree": true,
+      "rows": 4
+    },
+    "timestamp_ablation.csv": {
+      "all_rows_and_columns_agree": true,
+      "rows": 3
+    },
+    "independent_results.json": {
+      "all_new_diagnostic_fields_agree": true,
+      "fields": 11,
+      "residual_census": "Replayed by the unchanged PI script and the existing full-census auditors; not independently recomputed again here."
+    }
+  },
+  "counts": {
+    "sampling_exactly_reproduced": true,
+    "raw_files_read": 340,
+    "sample_families": 120,
+    "positive_sample_families": 60,
+    "eligible_rows": 462,
+    "matched": 458,
+    "distinct_source_DOIs": 362,
+    "unique_report_objects": 212,
+    "source_objects_positive": 471,
+    "all_source_roles_complete_families": 37,
+    "heading_baseline": {
+      "correct_rows": 451,
+      "wrong_rows": 0,
+      "matched_abstentions": 7
+    }
+  },
+  "role_coverage": [
+    {
+      "role": "review-article",
+      "source_objects": 269,
+      "retrieved_objects": 212,
+      "unmatched_objects": 57,
+      "recovery_pct": 78.81040892193309,
+      "families_with_source": 60,
+      "families_with_complete_role_set": 37,
+      "families_with_any_retrieved": 60
+    },
+    {
+      "role": "evaluation-summary",
+      "source_objects": 117,
+      "retrieved_objects": 91,
+      "unmatched_objects": 26,
+      "recovery_pct": 77.77777777777777,
+      "families_with_source": 60,
+      "families_with_complete_role_set": 37,
+      "families_with_any_retrieved": 60
+    },
+    {
+      "role": "reply",
+      "source_objects": 85,
+      "retrieved_objects": 59,
+      "unmatched_objects": 26,
+      "recovery_pct": 69.41176470588235,
+      "families_with_source": 58,
+      "families_with_complete_role_set": 35,
+      "families_with_any_retrieved": 45
+    }
+  ],
+  "coverage_bounds": [
+    {
+      "role": "review-article",
+      "source_objects": 269,
+      "unique_matched_objects": 212,
+      "not_uniquely_reconstructed": 57,
+      "unrepresented_lower_bound": 53,
+      "all_unresolved_allocated_favorably": 4,
+      "family_respecting_lower_bound": 56
+    },
+    {
+      "role": "evaluation-summary",
+      "source_objects": 117,
+      "unique_matched_objects": 91,
+      "not_uniquely_reconstructed": 26,
+      "unrepresented_lower_bound": 22,
+      "all_unresolved_allocated_favorably": 4,
+      "family_respecting_lower_bound": 25
+    },
+    {
+      "role": "reply",
+      "source_objects": 85,
+      "unique_matched_objects": 59,
+      "not_uniquely_reconstructed": 26,
+      "unrepresented_lower_bound": 22,
+      "all_unresolved_allocated_favorably": 4,
+      "family_respecting_lower_bound": 25
+    },
+    {
+      "role": "all_roles",
+      "source_objects": 471,
+      "unique_matched_objects": 362,
+      "not_uniquely_reconstructed": 109,
+      "unrepresented_lower_bound": 105,
+      "all_unresolved_allocated_favorably": 4,
+      "family_respecting_lower_bound": 108
+    }
+  ],
+  "bound_assumption": "At most one additional captured source DOI object can be assigned to each unresolved endpoint row, within its own family. This is an accounting bound for that assignment, not proof of service-wide absence or of the unit represented by an unresolved row.",
+  "role_bounds_are_separate_not_jointly_attainable": true,
+  "unresolved_families": [
+    {
+      "family": "106228",
+      "unresolved_rows": 1,
+      "source_deficit_all_roles": 0
+    },
+    {
+      "family": "106469",
+      "unresolved_rows": 1,
+      "source_deficit_all_roles": 0
+    },
+    {
+      "family": "87880",
+      "unresolved_rows": 1,
+      "source_deficit_all_roles": 0
+    },
+    {
+      "family": "91406",
+      "unresolved_rows": 1,
+      "source_deficit_all_roles": 4
+    }
+  ],
+  "new_unique_matches_after_second_truncation_are_unvalidated": [
+    {
+      "family": "87880",
+      "epmc_record": "PPR/PPR632773",
+      "epmc_id": 7259055,
+      "candidate": "10.7554/elife.87880.2.sa3"
+    }
+  ],
+  "heading_abstentions": [
+    {
+      "family": "90674",
+      "epmc_record": "PPR/PPR685392",
+      "epmc_id": 11849171,
+      "source_doi": "10.7554/elife.90674.1.sa0",
+      "opening_headings": [
+        "Joint Public Review:"
+      ]
+    },
+    {
+      "family": "90674",
+      "epmc_record": "PPR/PPR685392",
+      "epmc_id": 7263550,
+      "source_doi": "10.7554/elife.90674.1.sa0",
+      "opening_headings": [
+        "Joint Public Review:"
+      ]
+    },
+    {
+      "family": "94075",
+      "epmc_record": "PPR/PPR753333",
+      "epmc_id": 11884192,
+      "source_doi": "10.7554/elife.94075.1.sa0",
+      "opening_headings": [
+        "Joint Public Review:"
+      ]
+    },
+    {
+      "family": "94075",
+      "epmc_record": "PPR/PPR753333",
+      "epmc_id": 7269059,
+      "source_doi": "10.7554/elife.94075.1.sa0",
+      "opening_headings": [
+        "Joint Public Review:"
+      ]
+    },
+    {
+      "family": "107938",
+      "epmc_record": "PPR/PPR1061777",
+      "epmc_id": 11841328,
+      "source_doi": "10.7554/elife.107938.2.sa1",
+      "opening_headings": [
+        "Joint Public Review:"
+      ]
+    },
+    {
+      "family": "90274",
+      "epmc_record": "PPR/PPR413694",
+      "epmc_id": 11895201,
+      "source_doi": "10.7554/elife.90274.2.sa0",
+      "opening_headings": [
+        "Joint Public Review:"
+      ]
+    },
+    {
+      "family": "90274",
+      "epmc_record": "PPR/PPR413694",
+      "epmc_id": 7292904,
+      "source_doi": "10.7554/elife.90274.2.sa0",
+      "opening_headings": [
+        "Joint Public Review:"
+      ]
+    }
+  ],
+  "posthoc_heading_lexicon_sensitivity": {
+    "added_pattern": "Opening heading begins with 'Joint Public Review' (case-insensitive). All compatible variants must still agree.",
+    "timing": "Added after inspecting the seven initial comparator abstentions; this is within-sample sensitivity, not external validation.",
+    "fixed_matched_row_denominator": 458,
+    "baseline_agree": 451,
+    "baseline_abstain": 7,
+    "extended_agree": 458,
+    "extended_contradict": 0,
+    "extended_abstain": 0,
+    "changed_rows_in_fixed_matched_cohort": 7,
+    "changed_rows_in_all_eligible_rows": 8,
+    "changed_distinct_source_DOIs_in_fixed_matched_cohort": 4,
+    "changed_families_in_fixed_matched_cohort": 4,
+    "changed_families_in_all_eligible_rows": 5,
+    "unresolved_source_rows_newly_classified": 1,
+    "all_changes_have_literal_joint_public_review_opening": true
+  },
+  "precision_operation": "Truncate UTC-normalized instants to whole seconds or UTC calendar days; do not round. Offset-free endpoint clocks are treated as UTC, as in the inherited comparison.",
+  "fractional_precision_after_trailing_zero_normalization": {
+    "publisher": {
+      "4": 5,
+      "5": 85,
+      "6": 867
+    },
+    "endpoint": {
+      "3": 3,
+      "4": 4,
+      "5": 39,
+      "6": 416
+    }
+  },
+  "offset_free_timestamp_counts": {
+    "publisher": 0,
+    "endpoint": 462
+  },
+  "precision_fixed_cohort": {
+    "original": {
+      "denominator": 458,
+      "same_unique_match": 458,
+      "ambiguous": 0,
+      "no_candidate": 0
+    },
+    "seconds": {
+      "denominator": 458,
+      "same_unique_match": 273,
+      "ambiguous": 185,
+      "no_candidate": 0
+    },
+    "day": {
+      "denominator": 458,
+      "same_unique_match": 5,
+      "ambiguous": 453,
+      "no_candidate": 0
+    }
+  },
+  "precision_all_eligible_rows": {
+    "original": {
+      "rows": 462,
+      "unique": 458,
+      "ambiguous": 0,
+      "none": 4,
+      "retained_unique": 458,
+      "ambiguous_fixed_cohort": 0,
+      "missing_fixed_cohort": 0
+    },
+    "seconds": {
+      "rows": 462,
+      "unique": 274,
+      "ambiguous": 185,
+      "none": 3,
+      "retained_unique": 273,
+      "ambiguous_fixed_cohort": 185,
+      "missing_fixed_cohort": 0
+    },
+    "day": {
+      "rows": 462,
+      "unique": 5,
+      "ambiguous": 454,
+      "none": 3,
+      "retained_unique": 5,
+      "ambiguous_fixed_cohort": 453,
+      "missing_fixed_cohort": 0
+    }
+  },
+  "scientific_boundary_controls": {
+    "arbitrary_fraction_precision_not_silently_collapsed": true,
+    "second_truncation_exposes_ambiguity": true,
+    "wrong_actual_input_doi_rejects": true,
+    "missing_actual_step_input_rejects": true,
+    "date_only_does_not_become_exact_time": true,
+    "equal_instant_different_offsets_agree": true,
+    "naive_utc_assumption_explicit": true,
+    "truncation_is_not_nearest_second_rounding": true,
+    "same_full_timestamp_distinct_objects_remain_ambiguous": true,
+    "later_quoted_heading_is_not_used": true,
+    "markdown_opening_heading_recognized": true,
+    "author_response_opening_recognized": true,
+    "unknown_intermediate_variant_forces_abstention": true,
+    "conflicting_intermediate_roles_force_abstention": true,
+    "no_intermediate_candidate_forces_abstention": true,
+    "joint_public_review_is_only_a_posthoc_extension": true,
+    "extension_still_ignores_later_quoted_headings": true,
+    "extension_still_abstains_on_conflicting_variants": true,
+    "family_bound_cannot_borrow_rows_from_other_families": true,
+    "one_unresolved_row_cannot_cover_two_joint_role_objects": true,
+    "per_role_bounds_not_added_as_joint_minimum": true,
+    "family_bound_never_negative": true
+  },
+  "posthoc_heading_count_controls": {
+    "changed_rows_were_initial_lexicon_abstentions": true,
+    "every_changed_row_has_literal_joint_heading": true,
+    "all_fixed_cohort_changes_agree_with_source_role": true,
+    "extended_agree_equals_baseline_agree_plus_fixed_cohort_changed_rows": true
+  },
+  "scope": "Exploratory post-V4.2 diagnostics for the fixed stratified sample. Source DOI objects need not be independent intellectual contributions. No population recall or external classifier validation is asserted."
+}

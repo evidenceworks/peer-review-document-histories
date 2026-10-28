@@ -1,0 +1,60 @@
+{
+  "objects": 24,
+  "raw_text_variants": 28,
+  "unique_intermediate_objects": 21,
+  "multiple_intermediate_objects": 3,
+  "multiple_cases": [
+    {
+      "family": "88762",
+      "source_doi": "10.7554/elife.88762.2.sa3",
+      "source_role": "reply",
+      "source_hash_verified": 1,
+      "source_heading_agrees": 1,
+      "eeb_raw_candidates": 2,
+      "eeb_distinct_raw_texts": 2,
+      "eeb_distinct_lexical_variants": 1,
+      "all_lexical_variants_equal_source": 1,
+      "some_lexical_variant_equal_source": 1,
+      "all_differences_only_numeric_tokens": 1,
+      "minimum_lexical_similarity": 1.0,
+      "all_EEB_headings_agree": 1
+    },
+    {
+      "family": "94070",
+      "source_doi": "10.7554/elife.94070.2.sa4",
+      "source_role": "reply",
+      "source_hash_verified": 1,
+      "source_heading_agrees": 1,
+      "eeb_raw_candidates": 2,
+      "eeb_distinct_raw_texts": 2,
+      "eeb_distinct_lexical_variants": 1,
+      "all_lexical_variants_equal_source": 1,
+      "some_lexical_variant_equal_source": 1,
+      "all_differences_only_numeric_tokens": 1,
+      "minimum_lexical_similarity": 1.0,
+      "all_EEB_headings_agree": 1
+    },
+    {
+      "family": "90274",
+      "source_doi": "10.7554/elife.90274.2.sa2",
+      "source_role": "reply",
+      "source_hash_verified": 1,
+      "source_heading_agrees": 1,
+      "eeb_raw_candidates": 3,
+      "eeb_distinct_raw_texts": 3,
+      "eeb_distinct_lexical_variants": 1,
+      "all_lexical_variants_equal_source": 0,
+      "some_lexical_variant_equal_source": 0,
+      "all_differences_only_numeric_tokens": 1,
+      "minimum_lexical_similarity": 0.9975403443517907,
+      "all_EEB_headings_agree": 1
+    }
+  ],
+  "all_variants_lexically_equal_source_objects": 23,
+  "objects_with_only_numeric_differences": 1,
+  "source_heading_agreement": 24,
+  "all_variant_heading_agreement": 24,
+  "minimum_similarity_across_all_variants": 0.9975403443517907,
+  "scope": "All intermediate candidates were compared, not only the best-matching text. Word-sequence normalization removes markup and typographic differences; it does not demonstrate byte identity or independent scientific validation. Three controls have multiple raw EEB text variants, but each has one normalized lexical sequence. These controls do not resolve all 24 source objects with intermediate variants in the larger sample.",
+  "sample_reconstructed_exactly": true
+}

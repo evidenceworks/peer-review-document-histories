@@ -1,0 +1,75 @@
+{
+  "status": "PASS_RETAINED_DERIVED_EVIDENCE_REPLAY",
+  "retained_input_files_verified": 8,
+  "original_source_audit_status": "COMPLETED_WITH_UNRESOLVED_ITEMS",
+  "original_full_corpus_audit_closed": false,
+  "full_raw_XML_API_extraction_repeated": false,
+  "source_projection_rows": 13230,
+  "source_bytes_declared": 2536643784,
+  "families": 4856,
+  "source_field_checks": 304290,
+  "source_field_differences": 25,
+  "changed_source_representations": 7,
+  "subarticle_role_counts": {
+    "consensus_assessment": 13235,
+    "peer_reviewer_report": 30199,
+    "author_reply": 10116,
+    "editorial_report": 2
+  },
+  "current_reference_checks": 31950,
+  "current_reference_differences": 0,
+  "original_map_checks": 29136,
+  "original_map_differences": 0,
+  "historical_reference_field_checks": 90587,
+  "historical_reference_record_presence_changes": 7,
+  "source_identity_exceptions": [
+    "elife-preprint-100967-v1.xml",
+    "elife-preprint-109502-v1.xml"
+  ],
+  "current_comparators": {
+    "n": 3550,
+    "latest_dated": {
+      "concordant": 3533,
+      "discordant": 7,
+      "abstained": 10
+    },
+    "forward_typed": {
+      "concordant": 3528,
+      "abstained": 21,
+      "discordant": 1
+    },
+    "latest_known_label_differences": 0,
+    "latest_selections_with_resolved_source": 3540,
+    "current_task_uses_all_current_references_without_historical_candidate_imputation": true
+  },
+  "historical_comparisons": {
+    "any_historical_label_difference_lower": 1882,
+    "any_historical_label_difference_upper": 1883,
+    "nearest_prior_label_difference": 36,
+    "latest_reviewed_preprint_label_difference": 37,
+    "latest_reviewed_preprint_group_difference": 28,
+    "source_critical_history_current_favorable": 952,
+    "registered_critical_history_current_favorable": 949
+  },
+  "source_control_reconciliation": [
+    {
+      "family": "87297",
+      "original_full_source_execution": "PASS",
+      "current_replay": "CORROBORATED_FROM_DERIVED_INDEX_AND_PROJECTION",
+      "raw_XML_reextracted_in_this_replay": false
+    },
+    {
+      "family": "89782",
+      "original_full_source_execution": "PASS",
+      "current_replay": "CORROBORATED_FROM_DERIVED_INDEX_AND_PROJECTION",
+      "raw_XML_reextracted_in_this_replay": false
+    }
+  ],
+  "longitudinal_disposition": "Retained only as a correction record; excluded from active article outcome claims",
+  "primary_365_initial_categories": {
+    "at_least_solid": 2490,
+    "below_solid": 986,
+    "mixed_boundary": 402,
+    "ungraded": 4
+  }
+}

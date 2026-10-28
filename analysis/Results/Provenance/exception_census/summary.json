@@ -1,0 +1,49 @@
+{
+  "plan_sha256": "9582664fed2d1c148b698e1554a569af5572a68154d303a3fcee104a16eca178",
+  "families": 647,
+  "responses": 647,
+  "http200": 647,
+  "raw_bytes": 30449641,
+  "outcome_counts": {
+    "elife_review_event_present": 512,
+    "no_event_outputs": 133,
+    "elife_event_without_review_type": 1,
+    "other_publisher_events_only": 1
+  },
+  "by_endpoint_class": {
+    "no_reachable_PPR": {
+      "n": 59,
+      "upstream_outcomes": {
+        "no_event_outputs": 56,
+        "elife_review_event_present": 3
+      },
+      "source_original_DOI_declared_by_Crossref": 54,
+      "elife_review_events": 21,
+      "elife_review_with_text_families": 3
+    },
+    "publication_only": {
+      "n": 212,
+      "upstream_outcomes": {
+        "elife_review_event_present": 210,
+        "elife_event_without_review_type": 1,
+        "no_event_outputs": 1
+      },
+      "source_original_DOI_declared_by_Crossref": 211,
+      "elife_review_events": 1731,
+      "elife_review_with_text_families": 210
+    },
+    "reachable_PPR_no_elife_event": {
+      "n": 376,
+      "upstream_outcomes": {
+        "elife_review_event_present": 299,
+        "no_event_outputs": 76,
+        "other_publisher_events_only": 1
+      },
+      "source_original_DOI_declared_by_Crossref": 376,
+      "elife_review_events": 2515,
+      "elife_review_with_text_families": 299
+    }
+  },
+  "errors": [],
+  "scope": "A census of unmet endpoint tasks at the archived capture compared with publicly returned EEB events. Exact input DOI and event type are checked. Differences locate an observed boundary, not a causal software fault or lack of any public review."
+}

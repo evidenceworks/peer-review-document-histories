@@ -1,0 +1,13 @@
+{
+  "upstream_review_n": 512,
+  "strict_Crossref_eligible_recovery_n": 508,
+  "declared_Crossref_or_native_PPR_eligible_recovery_n": 509,
+  "not_input_reachable_positive": [
+    "107370",
+    "87536",
+    "88658"
+  ],
+  "combined_review_presence_n": 3409,
+  "denominator": 3547,
+  "scope": "Post hoc explicit upstream fallback from a DOI already declared in Crossref or a native PPR record. Source-concordant original DOI validates linkage; no title matching. EEB review-type and text presence are not individual report provenance or complete history."
+}

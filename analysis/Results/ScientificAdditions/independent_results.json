@@ -1,0 +1,26 @@
+{
+  "sampling_exactly_reproduced": true,
+  "raw_files_read": 340,
+  "sample_families": 120,
+  "positive_sample_families": 60,
+  "eligible_rows": 462,
+  "matched": 458,
+  "distinct_source_DOIs": 362,
+  "unique_report_objects": 212,
+  "source_objects_positive": 471,
+  "all_source_roles_complete_families": 37,
+  "heading_baseline": {
+    "correct_rows": 451,
+    "wrong_rows": 0,
+    "matched_abstentions": 7
+  },
+  "boundary": "New diagnostics are exploratory, conditional on publisher source identity, and not independent human validation or population rates.",
+  "independent_residual_census": {
+    "frozen_responses_verified": 647,
+    "review_positive": 512,
+    "operational_gain_with_declared_input": 509,
+    "source_only_positives_excluded": 3,
+    "review_presence_total": 3409,
+    "population_denominator": 3547
+  }
+}

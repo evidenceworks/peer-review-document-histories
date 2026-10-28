@@ -1,0 +1,75 @@
+{
+  "residual_families": 647,
+  "hash_verified_responses": 647,
+  "raw_bytes": 30449641,
+  "outcomes": {
+    "elife_review_event_present": 512,
+    "no_event_outputs": 133,
+    "elife_event_without_review_type": 1,
+    "other_publisher_events_only": 1
+  },
+  "positive_upstream_type": 512,
+  "positive_upstream_with_text": 512,
+  "positive_declared_Crossref": 508,
+  "positive_declared_Crossref_or_native": 509,
+  "source_only_positive_families": [
+    "107370",
+    "87536",
+    "88658"
+  ],
+  "native_only_positive_families": [
+    "106699"
+  ],
+  "base_service_successes": 2900,
+  "combined_verified_route_presence": 3409,
+  "denominator": 3547,
+  "strata": {
+    "no_reachable_PPR": {
+      "n": 59,
+      "outcomes": {
+        "no_event_outputs": 56,
+        "elife_review_event_present": 3
+      },
+      "upstream_positive": 3,
+      "upstream_positive_with_text": 3,
+      "declared_fallback_positive": 0
+    },
+    "publication_only": {
+      "n": 212,
+      "outcomes": {
+        "elife_review_event_present": 210,
+        "elife_event_without_review_type": 1,
+        "no_event_outputs": 1
+      },
+      "upstream_positive": 210,
+      "upstream_positive_with_text": 210,
+      "declared_fallback_positive": 210
+    },
+    "reachable_PPR_no_elife_event": {
+      "n": 376,
+      "outcomes": {
+        "elife_review_event_present": 299,
+        "no_event_outputs": 76,
+        "other_publisher_events_only": 1
+      },
+      "upstream_positive": 299,
+      "upstream_positive_with_text": 299,
+      "declared_fallback_positive": 299
+    }
+  },
+  "positive_family_heading_evidence": {
+    "reviewer_heading_outputs": 507,
+    "assessment_heading_outputs": 512,
+    "author_response_heading_outputs": 464,
+    "unresolved_heading_outputs": 33
+  },
+  "boundary_tests": {
+    "observed_positive_retained": true,
+    "different_query_DOI_not_success": true,
+    "publisher_change_not_success": true,
+    "publication_event_not_review_success": true,
+    "HTTP_error_never_absence_or_success": true,
+    "empty_valid_response_is_observed_no_outputs": true
+  },
+  "scope": "All 647 unmet role-qualified endpoint tasks, independently reconstructed. The 512 source-identified positive upstream responses include only 509 whose queried input DOI is independently present in the captured canonical Crossref or native PPR metadata. The other three cannot be credited to that operational route. EEB type review is coarse and includes several documentary roles; the result is review-type event presence with text, not a complete review history or current consensus. Additional declared DOI targets not captured in this source-defined census are not asserted absent. No causal ingestion explanation follows from asynchronous endpoint differences."
+}

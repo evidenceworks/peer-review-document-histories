@@ -1,0 +1,4 @@
+role,source_objects,retrieved_objects,unmatched_objects,recovery_pct,families_with_source,families_with_complete_role_set,families_with_any_retrieved
+review-article,269,212,57,78.81040892193309,60,37,60
+evaluation-summary,117,91,26,77.77777777777777,60,37,60
+reply,85,59,26,69.41176470588235,58,35,45

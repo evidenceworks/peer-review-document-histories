@@ -1,0 +1,7 @@
+stratum,N,sample_n,source_all_have_review_reports,eeb_review_present_n,epmc_review_present_n,epmc_role_repaired_n,epmc_author_reply_as_review_n,epmc_summary_as_review_n,full_source_summary_coverage_n,retrieved_summary_disagrees_current_n,source_outputs,epmc_matched_rows,epmc_unique_source_objects
+no_reachable_PPR,59,20,1,2,0,0,0,0,0,0,173,0,0
+publication_only,212,20,1,20,0,0,0,0,0,0,147,0,0
+reachable_PPR_no_elife_event,376,20,1,14,0,0,0,0,0,0,166,0,0
+review_no_url,30,20,1,20,20,20,5,20,6,6,141,84,76
+review_with_DOI_url,21,20,1,20,20,20,20,20,15,4,156,150,129
+review_with_generic_url,2849,20,1,20,20,20,20,20,16,10,174,224,157

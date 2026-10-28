@@ -1,0 +1,13 @@
+stratum,source_type,epmc_type,row_n,unique_source_objects,families
+publication_only,evaluation-summary,review,0,0,0
+publication_only,reply,review,0,0,0
+publication_only,review-article,review,0,0,0
+review_no_url,evaluation-summary,review,27,23,20
+review_no_url,reply,review,5,5,5
+review_no_url,review-article,review,52,48,20
+review_with_DOI_url,evaluation-summary,review,34,28,20
+review_with_DOI_url,reply,review,34,27,20
+review_with_DOI_url,review-article,review,82,74,20
+review_with_generic_url,evaluation-summary,review,56,40,20
+review_with_generic_url,reply,review,47,27,20
+review_with_generic_url,review-article,review,121,90,20

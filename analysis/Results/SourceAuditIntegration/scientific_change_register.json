@@ -1,0 +1,210 @@
+[
+  {
+    "id": "source_100967",
+    "unit": "elife-preprint-100967-v1.xml",
+    "before": {
+      "labels": [
+        "solid"
+      ],
+      "group": "at_least_solid"
+    },
+    "after": {
+      "labels": [
+        "solid"
+      ],
+      "group": "at_least_solid",
+      "candidate_DOIs": [
+        "10.7554/elife.100967.1.sa2",
+        "10.7554/elife.100967.1.sa6"
+      ]
+    },
+    "status": "retained_ambiguity",
+    "active_article_effect": "source-method verification; current reference and endpoint-join identity unchanged",
+    "source_sha256": "f0fddb6228e6a2bf1ebb1617c428e9f61b426f121eb24f37c14ef6d3f5ad2c95"
+  },
+  {
+    "id": "source_107041",
+    "unit": "elife-preprint-107041-v1.xml",
+    "before": {
+      "labels": [],
+      "group": "ungraded"
+    },
+    "after": {
+      "labels": [
+        "incomplete"
+      ],
+      "group": "below_solid",
+      "candidate_DOIs": [
+        "10.7554/elife.107041.1.sa5"
+      ]
+    },
+    "status": "corrected_omission",
+    "active_article_effect": "source-method verification; current reference and endpoint-join identity unchanged",
+    "source_sha256": "eb40f8dd555b1c7e2234f916b38f83d5a8d33b1de9005054bf52c94f0efb6422"
+  },
+  {
+    "id": "source_109502",
+    "unit": "elife-preprint-109502-v1.xml",
+    "before": {
+      "labels": [],
+      "group": "ungraded"
+    },
+    "after": {
+      "labels": null,
+      "group": "unresolved_assessment",
+      "candidate_DOIs": [
+        "10.7554/elife.109502.1.sa7",
+        "10.7554/elife.109502.1.sa8"
+      ]
+    },
+    "status": "retained_ambiguity",
+    "active_article_effect": "source-method verification; current reference and endpoint-join identity unchanged",
+    "source_sha256": "dca0fe9df3ccd09007411f6d00709320d994526564d6191063695aaaf3cf6a4b"
+  },
+  {
+    "id": "source_87030",
+    "unit": "elife-preprint-87030-v1.xml",
+    "before": {
+      "labels": [],
+      "group": "ungraded"
+    },
+    "after": {
+      "labels": [
+        "incomplete"
+      ],
+      "group": "below_solid",
+      "candidate_DOIs": [
+        "10.7554/elife.87030.1.sa1"
+      ]
+    },
+    "status": "corrected_omission",
+    "active_article_effect": "source-method verification; current reference and endpoint-join identity unchanged",
+    "source_sha256": "38dddd77bb8c41a10b2d84a3e281a752a32d5cbea8bd447176c0a94de41ab2e6"
+  },
+  {
+    "id": "source_90046",
+    "unit": "elife-preprint-90046-v2.xml",
+    "before": {
+      "labels": [],
+      "group": "ungraded"
+    },
+    "after": {
+      "labels": [
+        "incomplete",
+        "solid"
+      ],
+      "group": "mixed_boundary",
+      "candidate_DOIs": [
+        "10.7554/elife.90046.2.sa3"
+      ]
+    },
+    "status": "corrected_omission",
+    "active_article_effect": "source-method verification; current reference and endpoint-join identity unchanged",
+    "source_sha256": "f7c3181d6424759cae7fdbef24bd7c85796157fe14e991d13f89663069daf76c"
+  },
+  {
+    "id": "source_90949",
+    "unit": "elife-preprint-90949-v1.xml",
+    "before": {
+      "labels": [],
+      "group": "ungraded"
+    },
+    "after": {
+      "labels": [
+        "convincing"
+      ],
+      "group": "at_least_solid",
+      "candidate_DOIs": [
+        "10.7554/elife.90949.1.sa3"
+      ]
+    },
+    "status": "corrected_omission",
+    "active_article_effect": "source-method verification; current reference and endpoint-join identity unchanged",
+    "source_sha256": "0d8fe970bcc6aa4a3c354c24a49d0085acf513986718ef8f344c4c450bd2be83"
+  },
+  {
+    "id": "source_93656",
+    "unit": "elife-preprint-93656-v2.xml",
+    "before": {
+      "labels": [],
+      "group": "ungraded"
+    },
+    "after": {
+      "labels": [
+        "compelling"
+      ],
+      "group": "at_least_solid",
+      "candidate_DOIs": [
+        "10.7554/elife.93656.2.sa2"
+      ]
+    },
+    "status": "corrected_omission",
+    "active_article_effect": "source-method verification; current reference and endpoint-join identity unchanged",
+    "source_sha256": "a351b8d52113880c8fe2cef81547a0bbe66530434f3df50d2b94b2f4f09cd8a8"
+  },
+  {
+    "id": "historical_label_variation",
+    "before": 1882,
+    "after": {
+      "lower": 1882,
+      "upper": 1883
+    },
+    "status": "partially_identified",
+    "active_article_effect": "SI corrected; not a current-selector error rate"
+  },
+  {
+    "id": "latest_reviewed_preprint_versus_current_VOR",
+    "before": {
+      "strength_set_differences": 38,
+      "group_differences": 29
+    },
+    "after": {
+      "strength_set_differences": 37,
+      "group_differences": 28
+    },
+    "status": "corrected_source_omission_93656",
+    "active_article_effect": "SI direct latest-RP comparison corrected; nearest identified earlier-version difference remains 36; all 3,550 current references retained"
+  },
+  {
+    "id": "current_latest_comparator",
+    "before": [
+      3533,
+      7,
+      10
+    ],
+    "after": [
+      3533,
+      7,
+      10
+    ],
+    "status": "unchanged_independently_recomputed",
+    "active_article_effect": "retain all 3,550 current references; no whole-history denominator exclusion"
+  },
+  {
+    "id": "critical_history_intersection",
+    "before": 949,
+    "after": 949,
+    "status": "unchanged_independently_recomputed",
+    "active_article_effect": "main contextual comparison retained"
+  },
+  {
+    "id": "historical_365_below_solid_background",
+    "before": {
+      "numerator": 493,
+      "denominator": 984
+    },
+    "after": {
+      "numerator": 493,
+      "denominator": 986
+    },
+    "status": "corrected_background",
+    "active_article_effect": "not an active article outcome; retained correction receipt"
+  },
+  {
+    "id": "source_audit_execution",
+    "before": "full source extraction not yet available",
+    "after": "completed with two retained source ambiguities",
+    "status": "completed_execution_with_unresolved_semantics",
+    "active_article_effect": "methods/SI updated; original strict closure flag remains false"
+  }
+]

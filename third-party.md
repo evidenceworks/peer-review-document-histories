@@ -1,0 +1,12 @@
+# Third-party sources and rights
+
+The MIT and CC BY 4.0 licenses in this repository apply only to original code, documentation and author-produced derived tables. They do not change the rights in any underlying scholarly work or API response.
+
+- **eLife.** The study uses eLife article and review identifiers, document relations and archived document properties. eLife's public article XML repository states that its articles are distributed under CC BY or CC0; individual source statements govern any reused content. See https://github.com/elifesciences/elife-article-xml and https://elifesciences.github.io/developer-resources/.
+- **Crossref.** Bibliographic facts and Crossref-generated metadata are generally open or CC0, but abstracts may retain publisher copyright. The retained Crossref projections do not contain abstract fields. See https://www.crossref.org/documentation/retrieve-metadata/.
+- **Europe PMC.** Index and evaluation metadata supplied by Europe PMC are attributed to that service and its contributors. Europe PMC warns that publisher-supplied full text and abstracts may carry their own copyright and reuse conditions. See https://europepmc.org/ and https://dev.europepmc.org/Copyright.
+- **Early Evidence Base (EEB), EMBO.** Public DocMap responses were used to study evaluation activities. EEB aggregates content from different publishers, so access to its API alone does not establish a redistribution license. See https://eeb.embo.org/.
+- **Review Commons.** Some historical EEB captures contain Review Commons review text. Sciety identifies Review Commons content as all rights reserved and used with permission. These raw captures are **not included** in this public repository. See https://sciety.org/groups/review-commons/about and https://www.reviewcommons.org/.
+- **Fonts and software.** Nimbus Roman font files are not bundled. Rendering relies on a separately installed URW font package; packages required for figures retain their upstream software licenses.
+
+The published results and figure-source tables are study-derived analyses, not copies of full third-party articles or historical review documents. The source-input manifest records hashes for the private original captures, allowing holders of that archive to verify exactly which observations were used. Where a table contains a DOI or third-party title, it is provided for source identification, not as an assertion of authorship or ownership.

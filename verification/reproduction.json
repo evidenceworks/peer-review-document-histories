@@ -1,0 +1,67 @@
+{
+  "release": "v1.0.0",
+  "verification_date": "2026-10-28",
+  "runtime": {
+    "python": "3.13.5",
+    "system": "Linux (local test environment)"
+  },
+  "original_archived_source_replay": {
+    "status": "PASS",
+    "original_input_files": 2188,
+    "original_input_sha256": "2188/2188 PASS",
+    "stages": 14,
+    "result_files_reproduced": 65,
+    "result_files_exactly_compared": 65,
+    "scientific_boundary_controls": 52,
+    "elapsed_seconds": 27.067,
+    "source_extraction_reexecuted": false,
+    "unresolved_historical_unique_identities": 2,
+    "scope": "Replay from the original separately held archive, not the public-only repository"
+  },
+  "public_only_quick_check": {
+    "status": "PASS",
+    "assertions": 182,
+    "result_sha256_verified": 65,
+    "figure_input_sha256_verified": 20,
+    "requires_third_party_packages": false
+  },
+  "fresh_environment_python": {
+    "status": "PASS",
+    "mode": "Isolated standard-library Python virtual environment, quick check and 3 unit tests"
+  },
+  "public_figure_rebuild": {
+    "status": "PASS",
+    "figures": 5,
+    "formats": [
+      "SVG",
+      "PNG",
+      "TIFF"
+    ],
+    "independent_scientific_checks": 2008
+  },
+  "notebooks_executed_locally": {
+    "quick": {
+      "status": "PASS",
+      "elapsed_seconds": 2.885,
+      "code_cells": 2,
+      "errors": 0
+    },
+    "figures": {
+      "status": "PASS",
+      "elapsed_seconds": 15.413,
+      "code_cells": 2,
+      "errors": 0
+    },
+    "runtime": "Local Jupyter kernels with existing repository; not Google Colab"
+  },
+  "google_colab_execution": {
+    "status": "NOT_TESTED",
+    "reason": "Public GitHub repository does not yet exist; user approval required before publication"
+  },
+  "public_raw_input_replay": {
+    "status": "NOT_AVAILABLE_FROM_PUBLIC_ONLY_RELEASE",
+    "reason": "Original third-party API and review text withheld pending redistribution rights"
+  },
+  "source_audit_note": "Initial audit of 13,230 XML files and 517 historical captures was not repeated; preserve its documented unresolved cases",
+  "publication_status": "NOT_PUBLISHED"
+}

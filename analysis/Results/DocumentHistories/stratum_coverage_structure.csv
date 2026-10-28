@@ -1,0 +1,4 @@
+stratum,population_families,sample_families,endpoint_rows,matched_rows,source_objects,reconstructed_objects,complete_families,source_steps,complete_steps,absent_steps,review-article_source,review-article_reconstructed,evaluation-summary_source,evaluation-summary_reconstructed,reply_source,reply_reconstructed
+review_no_url,30,20,84,84,141,76,6,39,23,16,81,48,39,23,21,5
+review_with_DOI_url,21,20,153,150,156,129,15,34,28,6,89,74,34,28,33,27
+review_with_generic_url,2849,20,225,224,174,157,16,44,40,4,99,90,44,40,31,27

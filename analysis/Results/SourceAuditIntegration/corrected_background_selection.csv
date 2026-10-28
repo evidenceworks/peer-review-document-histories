@@ -1,0 +1,10 @@
+scenario,subset,denominator,favorable_latest,percent
+primary,all,986,493,50.0
+primary,later,712,493,69.24157303370787
+primary,VOR,532,405,76.12781954887218
+earliest,all,986,493,50.0
+earliest,later,712,493,69.24157303370787
+earliest,VOR,532,405,76.12781954887218
+latest,all,986,493,50.0
+latest,later,712,493,69.24157303370787
+latest,VOR,532,405,76.12781954887218

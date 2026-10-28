@@ -1,0 +1,690 @@
+{
+  "status": "CORE_COUNTS_VERIFIED_WITH_INTERMEDIATE_MULTIPLICITY",
+  "sample_reconstructed_exactly": true,
+  "sample_families": 120,
+  "plan_sha256": "0bde2dc6e3cb36bb3924dc36030a8c66b6ef8acb73eef1faca882b8a854ed003",
+  "population": 3547,
+  "stratum_sizes": {
+    "no_reachable_PPR": 59,
+    "publication_only": 212,
+    "reachable_PPR_no_elife_event": 376,
+    "review_no_url": 30,
+    "review_with_DOI_url": 21,
+    "review_with_generic_url": 2849
+  },
+  "raw_captures_verified": 340,
+  "raw_bytes_verified": 8692921,
+  "publisher_API_captures_verified": 120,
+  "EPMC_projections_equal_archive": 100,
+  "raw_EPMC_keys": [
+    "dataOrigin",
+    "dateUpdated",
+    "doi",
+    "evaluationDate",
+    "evaluatorsList",
+    "id",
+    "logoUrl",
+    "platform",
+    "title",
+    "type",
+    "url"
+  ],
+  "source_object_roles": {
+    "review-article": 553,
+    "evaluation-summary": 237,
+    "reply": 167
+  },
+  "source_distinct_object_keys": 957,
+  "source_duplicate_occurrences": [],
+  "source_timestamp_collisions": [],
+  "service_row_status": {
+    "not_review_type": 50,
+    "matched": 458,
+    "no_source_date_match": 4
+  },
+  "matched_source_roles_by_row": {
+    "review-article": 255,
+    "evaluation-summary": 117,
+    "reply": 86
+  },
+  "matched_source_roles_unique": {
+    "review-article": 212,
+    "evaluation-summary": 91,
+    "reply": 59
+  },
+  "unique_matched_source_objects": 362,
+  "duplicate_matched_service_rows_beyond_unique_objects": 96,
+  "all_matched_EPMC_rows_have_type_review": true,
+  "all_matches_bind_to_actual_evaluation_step_input": true,
+  "matched_rows_without_unique_EEB_provider_inputDOI_timestamp_review": [
+    {
+      "family": "105236",
+      "epmc_id": 7280794,
+      "source_doi": "10.7554/elife.105236.1.sa0",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "91645",
+      "epmc_id": 7262054,
+      "source_doi": "10.7554/elife.91645.1.sa2",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "91645",
+      "epmc_id": 7262055,
+      "source_doi": "10.7554/elife.91645.1.sa2",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "110400",
+      "epmc_id": 11868518,
+      "source_doi": "10.7554/elife.110400.1.sa3",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "110400",
+      "epmc_id": 11868520,
+      "source_doi": "10.7554/elife.110400.1.sa3",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "107813",
+      "epmc_id": 11859692,
+      "source_doi": "10.7554/elife.107813.1.sa0",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "107813",
+      "epmc_id": 11859697,
+      "source_doi": "10.7554/elife.107813.1.sa0",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "106537",
+      "epmc_id": 7281156,
+      "source_doi": "10.7554/elife.106537.1.sa3",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "106537",
+      "epmc_id": 7281157,
+      "source_doi": "10.7554/elife.106537.1.sa3",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "106537",
+      "epmc_id": 7281160,
+      "source_doi": "10.7554/elife.106537.1.sa0",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "107534",
+      "epmc_id": 7279434,
+      "source_doi": "10.7554/elife.107534.1.sa0",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "107534",
+      "epmc_id": 7279435,
+      "source_doi": "10.7554/elife.107534.1.sa0",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "107534",
+      "epmc_id": 11879417,
+      "source_doi": "10.7554/elife.107534.1.sa0",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "107534",
+      "epmc_id": 11879418,
+      "source_doi": "10.7554/elife.107534.1.sa0",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "102915",
+      "epmc_id": 7274420,
+      "source_doi": "10.7554/elife.102915.1.sa3",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "102915",
+      "epmc_id": 7274424,
+      "source_doi": "10.7554/elife.102915.1.sa3",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "106415",
+      "epmc_id": 7280964,
+      "source_doi": "10.7554/elife.106415.1.sa4",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "106415",
+      "epmc_id": 7280967,
+      "source_doi": "10.7554/elife.106415.1.sa4",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "106469",
+      "epmc_id": 7277955,
+      "source_doi": "10.7554/elife.106469.1.sa0",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "106469",
+      "epmc_id": 11842179,
+      "source_doi": "10.7554/elife.106469.1.sa0",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "106469",
+      "epmc_id": 11842183,
+      "source_doi": "10.7554/elife.106469.1.sa0",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "104181",
+      "epmc_id": 11859358,
+      "source_doi": "10.7554/elife.104181.2.sa0",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "104181",
+      "epmc_id": 7280732,
+      "source_doi": "10.7554/elife.104181.2.sa0",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "104181",
+      "epmc_id": 11859360,
+      "source_doi": "10.7554/elife.104181.2.sa0",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "87880",
+      "epmc_id": 7259054,
+      "source_doi": "10.7554/elife.87880.2.sa0",
+      "matching_eeb_review_outputs": 3
+    },
+    {
+      "family": "87880",
+      "epmc_id": 7259056,
+      "source_doi": "10.7554/elife.87880.2.sa3",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "87880",
+      "epmc_id": 7259057,
+      "source_doi": "10.7554/elife.87880.2.sa3",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "87880",
+      "epmc_id": 7259058,
+      "source_doi": "10.7554/elife.87880.2.sa0",
+      "matching_eeb_review_outputs": 3
+    },
+    {
+      "family": "87880",
+      "epmc_id": 7259063,
+      "source_doi": "10.7554/elife.87880.2.sa0",
+      "matching_eeb_review_outputs": 3
+    },
+    {
+      "family": "99173",
+      "epmc_id": 7275837,
+      "source_doi": "10.7554/elife.99173.2.sa0",
+      "matching_eeb_review_outputs": 3
+    },
+    {
+      "family": "99173",
+      "epmc_id": 7275841,
+      "source_doi": "10.7554/elife.99173.2.sa0",
+      "matching_eeb_review_outputs": 3
+    },
+    {
+      "family": "100928",
+      "epmc_id": 7277529,
+      "source_doi": "10.7554/elife.100928.2.sa0",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "100928",
+      "epmc_id": 7277531,
+      "source_doi": "10.7554/elife.100928.1.sa4",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "100928",
+      "epmc_id": 7277533,
+      "source_doi": "10.7554/elife.100928.2.sa0",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "100928",
+      "epmc_id": 7277534,
+      "source_doi": "10.7554/elife.100928.1.sa4",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "100928",
+      "epmc_id": 7277535,
+      "source_doi": "10.7554/elife.100928.2.sa4",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "100928",
+      "epmc_id": 7277537,
+      "source_doi": "10.7554/elife.100928.2.sa4",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "100928",
+      "epmc_id": 7277538,
+      "source_doi": "10.7554/elife.100928.2.sa1",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "100928",
+      "epmc_id": 7277539,
+      "source_doi": "10.7554/elife.100928.2.sa1",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "88762",
+      "epmc_id": 7258161,
+      "source_doi": "10.7554/elife.88762.2.sa3",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "88762",
+      "epmc_id": 11889000,
+      "source_doi": "10.7554/elife.88762.2.sa3",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "88762",
+      "epmc_id": 11889001,
+      "source_doi": "10.7554/elife.88762.2.sa3",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "90136",
+      "epmc_id": 7262766,
+      "source_doi": "10.7554/elife.90136.2.sa3",
+      "matching_eeb_review_outputs": 3
+    },
+    {
+      "family": "90136",
+      "epmc_id": 7262770,
+      "source_doi": "10.7554/elife.90136.2.sa3",
+      "matching_eeb_review_outputs": 3
+    },
+    {
+      "family": "106975",
+      "epmc_id": 7282233,
+      "source_doi": "10.7554/elife.106975.1.sa3",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "94070",
+      "epmc_id": 7269566,
+      "source_doi": "10.7554/elife.94070.2.sa4",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "90274",
+      "epmc_id": 11895204,
+      "source_doi": "10.7554/elife.90274.2.sa2",
+      "matching_eeb_review_outputs": 3
+    },
+    {
+      "family": "90274",
+      "epmc_id": 11895206,
+      "source_doi": "10.7554/elife.90274.2.sa2",
+      "matching_eeb_review_outputs": 3
+    },
+    {
+      "family": "90274",
+      "epmc_id": 11895208,
+      "source_doi": "10.7554/elife.90274.2.sa2",
+      "matching_eeb_review_outputs": 3
+    },
+    {
+      "family": "90274",
+      "epmc_id": 7292899,
+      "source_doi": "10.7554/elife.90274.2.sa2",
+      "matching_eeb_review_outputs": 3
+    },
+    {
+      "family": "90274",
+      "epmc_id": 7292900,
+      "source_doi": "10.7554/elife.90274.2.sa2",
+      "matching_eeb_review_outputs": 3
+    },
+    {
+      "family": "102823",
+      "epmc_id": 7278414,
+      "source_doi": "10.7554/elife.102823.2.sa0",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "102823",
+      "epmc_id": 11893177,
+      "source_doi": "10.7554/elife.102823.2.sa0",
+      "matching_eeb_review_outputs": 2
+    },
+    {
+      "family": "102823",
+      "epmc_id": 11893183,
+      "source_doi": "10.7554/elife.102823.2.sa0",
+      "matching_eeb_review_outputs": 2
+    }
+  ],
+  "matched_rows_with_nonempty_title": 0,
+  "unmatched_review_rows": [
+    {
+      "family": "106228",
+      "stratum": "review_with_DOI_url",
+      "epmc_record": "PPR/PPR912407",
+      "epmc_id": 11868426,
+      "epmc_type": "reviews-summary",
+      "epmc_doi": "10.1101/2024.09.19.613828",
+      "epmc_date": "2025-07-02T06:32:33.031000",
+      "status": "no_source_date_match",
+      "source_doi": "",
+      "source_role": "",
+      "source_actual_input_dois": [],
+      "source_actual_input_versions": [],
+      "source_actual_input_bindings": [],
+      "source_associated_RP_containers": [],
+      "source_participant_roles": [],
+      "eeb_exact_provider_inputDOI_timestamp_candidates": 1,
+      "eeb_exact_provider_inputDOI_timestamp_review_candidates": 0,
+      "eeb_matched_participant_role_sets": [],
+      "eeb_any_peer_reviewer_participant": 0,
+      "eeb_all_candidates_peer_reviewer_participant": 0,
+      "eeb_matched_distinct_texts": 0,
+      "epmc_title_present": 0,
+      "epmc_evaluators": [],
+      "source_identifier_literal_in_EPMC_row": 0,
+      "eeb_alternative_output_dois": [],
+      "eeb_candidates_with_nonempty_output_DOI": 0,
+      "eeb_candidates_with_source_output_DOI": 0,
+      "eeb_candidates_with_explicit_input_version": 0
+    },
+    {
+      "family": "91406",
+      "stratum": "review_with_DOI_url",
+      "epmc_record": "PPR/PPR489435",
+      "epmc_id": 7298563,
+      "epmc_type": "reviews-summary",
+      "epmc_doi": "10.1101/2022.05.05.490846",
+      "epmc_date": "2023-10-26T01:47:47.065000",
+      "status": "no_source_date_match",
+      "source_doi": "",
+      "source_role": "",
+      "source_actual_input_dois": [],
+      "source_actual_input_versions": [],
+      "source_actual_input_bindings": [],
+      "source_associated_RP_containers": [],
+      "source_participant_roles": [],
+      "eeb_exact_provider_inputDOI_timestamp_candidates": 1,
+      "eeb_exact_provider_inputDOI_timestamp_review_candidates": 0,
+      "eeb_matched_participant_role_sets": [],
+      "eeb_any_peer_reviewer_participant": 0,
+      "eeb_all_candidates_peer_reviewer_participant": 0,
+      "eeb_matched_distinct_texts": 0,
+      "epmc_title_present": 0,
+      "epmc_evaluators": [],
+      "source_identifier_literal_in_EPMC_row": 0,
+      "eeb_alternative_output_dois": [],
+      "eeb_candidates_with_nonempty_output_DOI": 0,
+      "eeb_candidates_with_source_output_DOI": 0,
+      "eeb_candidates_with_explicit_input_version": 0
+    },
+    {
+      "family": "106469",
+      "stratum": "review_with_DOI_url",
+      "epmc_record": "PPR/PPR886204",
+      "epmc_id": 11842178,
+      "epmc_type": "reviews-summary",
+      "epmc_doi": "10.1101/2024.07.23.604790",
+      "epmc_date": "2025-07-02T06:34:19.991000",
+      "status": "no_source_date_match",
+      "source_doi": "",
+      "source_role": "",
+      "source_actual_input_dois": [],
+      "source_actual_input_versions": [],
+      "source_actual_input_bindings": [],
+      "source_associated_RP_containers": [],
+      "source_participant_roles": [],
+      "eeb_exact_provider_inputDOI_timestamp_candidates": 1,
+      "eeb_exact_provider_inputDOI_timestamp_review_candidates": 0,
+      "eeb_matched_participant_role_sets": [],
+      "eeb_any_peer_reviewer_participant": 0,
+      "eeb_all_candidates_peer_reviewer_participant": 0,
+      "eeb_matched_distinct_texts": 0,
+      "epmc_title_present": 0,
+      "epmc_evaluators": [],
+      "source_identifier_literal_in_EPMC_row": 0,
+      "eeb_alternative_output_dois": [],
+      "eeb_candidates_with_nonempty_output_DOI": 0,
+      "eeb_candidates_with_source_output_DOI": 0,
+      "eeb_candidates_with_explicit_input_version": 0
+    },
+    {
+      "family": "87880",
+      "stratum": "review_with_generic_url",
+      "epmc_record": "PPR/PPR632773",
+      "epmc_id": 7259055,
+      "epmc_type": "review",
+      "epmc_doi": "10.1101/2023.03.17.533056",
+      "epmc_date": "2024-07-24T11:28:44.949907",
+      "status": "no_source_date_match",
+      "source_doi": "",
+      "source_role": "",
+      "source_actual_input_dois": [],
+      "source_actual_input_versions": [],
+      "source_actual_input_bindings": [],
+      "source_associated_RP_containers": [],
+      "source_participant_roles": [],
+      "eeb_exact_provider_inputDOI_timestamp_candidates": 1,
+      "eeb_exact_provider_inputDOI_timestamp_review_candidates": 1,
+      "eeb_matched_participant_role_sets": [
+        [
+          "peer-reviewer"
+        ]
+      ],
+      "eeb_any_peer_reviewer_participant": 1,
+      "eeb_all_candidates_peer_reviewer_participant": 1,
+      "eeb_matched_distinct_texts": 1,
+      "epmc_title_present": 0,
+      "epmc_evaluators": [
+        {
+          "name": "anonymous"
+        }
+      ],
+      "source_identifier_literal_in_EPMC_row": 0,
+      "eeb_alternative_output_dois": [],
+      "eeb_candidates_with_nonempty_output_DOI": 0,
+      "eeb_candidates_with_source_output_DOI": 0,
+      "eeb_candidates_with_explicit_input_version": 0
+    }
+  ],
+  "EEB_matching_multiplicity": {
+    "no_match_rows": 0,
+    "unique_match_rows": 404,
+    "multiple_match_rows": 54,
+    "multiple_match_distinct_source_objects": 24,
+    "multiple_match_families": 19,
+    "multiple_match_rows_with_distinct_texts": 54
+  },
+  "source_reply_with_EEB_peer_reviewer_participant": {
+    "matched_rows": 61,
+    "distinct_source_reply_objects": 38,
+    "families": 32,
+    "all_matching_EEB_variants_agree": true
+  },
+  "matched_rows_literally_exposing_source_object_DOI": 0,
+  "EEB_identifier_and_input_version_fields": {
+    "candidate_bindings_including_multiplicity": 524,
+    "matched_rows_with_alternative_output_DOI": 98,
+    "distinct_alternative_output_DOIs": 54,
+    "distinct_source_objects_with_alternative_EEB_DOI": 84,
+    "candidate_bindings_with_eLife_source_output_DOI": 0,
+    "candidate_bindings_with_explicit_evaluated_input_version": 0,
+    "scope": "An alternative intermediate DOI can identify a separate representation. Missing eLife source-object identifiers does not mean all intermediate outputs lack identifiers.",
+    "candidate_bindings_with_nonempty_alternative_DOI": 110,
+    "families_with_alternative_output_DOI": 20,
+    "alternative_identifier_prefixes": [
+      "10.15252/rc."
+    ],
+    "distinct_source_roles_with_alternative_DOI": {
+      "review-article": 72,
+      "reply": 12
+    },
+    "source_objects_per_alternative_DOI_distribution": {
+      "1": 30,
+      "2": 19,
+      "3": 4,
+      "4": 1
+    },
+    "alternative_DOI_source_role_sets": {
+      "review-article": 43,
+      "reply|review-article": 11
+    },
+    "alternative_DOIs_spanning_multiple_families": 0,
+    "distinct_alternative_DOIs_by_source_role": {
+      "review-article": 54,
+      "reply": 11
+    }
+  },
+  "strata": [
+    {
+      "stratum": "no_reachable_PPR",
+      "N": 59,
+      "sample_n": 20,
+      "source_all_have_review_reports": 1,
+      "eeb_review_present_n": 2,
+      "epmc_review_present_n": 0,
+      "epmc_role_repaired_n": 0,
+      "epmc_author_reply_as_review_n": 0,
+      "epmc_summary_as_review_n": 0,
+      "full_source_summary_coverage_n": 0,
+      "retrieved_summary_disagrees_current_n": 0,
+      "source_outputs": 173,
+      "epmc_matched_rows": 0,
+      "epmc_unique_source_objects": 0
+    },
+    {
+      "stratum": "publication_only",
+      "N": 212,
+      "sample_n": 20,
+      "source_all_have_review_reports": 1,
+      "eeb_review_present_n": 20,
+      "epmc_review_present_n": 0,
+      "epmc_role_repaired_n": 0,
+      "epmc_author_reply_as_review_n": 0,
+      "epmc_summary_as_review_n": 0,
+      "full_source_summary_coverage_n": 0,
+      "retrieved_summary_disagrees_current_n": 0,
+      "source_outputs": 147,
+      "epmc_matched_rows": 0,
+      "epmc_unique_source_objects": 0
+    },
+    {
+      "stratum": "reachable_PPR_no_elife_event",
+      "N": 376,
+      "sample_n": 20,
+      "source_all_have_review_reports": 1,
+      "eeb_review_present_n": 14,
+      "epmc_review_present_n": 0,
+      "epmc_role_repaired_n": 0,
+      "epmc_author_reply_as_review_n": 0,
+      "epmc_summary_as_review_n": 0,
+      "full_source_summary_coverage_n": 0,
+      "retrieved_summary_disagrees_current_n": 0,
+      "source_outputs": 166,
+      "epmc_matched_rows": 0,
+      "epmc_unique_source_objects": 0
+    },
+    {
+      "stratum": "review_no_url",
+      "N": 30,
+      "sample_n": 20,
+      "source_all_have_review_reports": 1,
+      "eeb_review_present_n": 20,
+      "epmc_review_present_n": 20,
+      "epmc_role_repaired_n": 20,
+      "epmc_author_reply_as_review_n": 5,
+      "epmc_summary_as_review_n": 20,
+      "full_source_summary_coverage_n": 6,
+      "retrieved_summary_disagrees_current_n": 6,
+      "source_outputs": 141,
+      "epmc_matched_rows": 84,
+      "epmc_unique_source_objects": 76
+    },
+    {
+      "stratum": "review_with_DOI_url",
+      "N": 21,
+      "sample_n": 20,
+      "source_all_have_review_reports": 1,
+      "eeb_review_present_n": 20,
+      "epmc_review_present_n": 20,
+      "epmc_role_repaired_n": 20,
+      "epmc_author_reply_as_review_n": 20,
+      "epmc_summary_as_review_n": 20,
+      "full_source_summary_coverage_n": 15,
+      "retrieved_summary_disagrees_current_n": 4,
+      "source_outputs": 156,
+      "epmc_matched_rows": 150,
+      "epmc_unique_source_objects": 129
+    },
+    {
+      "stratum": "review_with_generic_url",
+      "N": 2849,
+      "sample_n": 20,
+      "source_all_have_review_reports": 1,
+      "eeb_review_present_n": 20,
+      "epmc_review_present_n": 20,
+      "epmc_role_repaired_n": 20,
+      "epmc_author_reply_as_review_n": 20,
+      "epmc_summary_as_review_n": 20,
+      "full_source_summary_coverage_n": 16,
+      "retrieved_summary_disagrees_current_n": 10,
+      "source_outputs": 174,
+      "epmc_matched_rows": 224,
+      "epmc_unique_source_objects": 157
+    }
+  ],
+  "publisher_current_selection": {
+    "n": 120,
+    "concordant_DOI": 118,
+    "concordant_strength_set": 118,
+    "abstained": 2,
+    "abstaining_families": [
+      "101069",
+      "96953"
+    ]
+  },
+  "boundary_tests": {
+    "real_row_matches": true,
+    "perturbed_DOI_abstains": true,
+    "coarsened_date_abstains": true,
+    "event_role_change_abstains": true,
+    "ambiguous_timestamp_abstains": true,
+    "same_identifier_conflicting_source_role_abstains": true,
+    "wrong_provider_abstains": true,
+    "DOI_only_in_another_evaluation_step_abstains": true,
+    "producing_real_row_matches": true,
+    "producing_perturbed_DOI_abstains": true,
+    "producing_DOI_only_in_another_evaluation_step_abstains": true,
+    "producing_coarsened_date_abstains": true,
+    "producing_event_role_change_abstains": true,
+    "producing_ambiguous_timestamp_abstains": true,
+    "producing_conflicting_source_role_abstains": true
+  },
+  "interpretation": "Separate implementation from raw captures. Sample facts are not pooled population percentages. Matching uses the actual evaluation-step original DOI and exact full timestamp; source role, DOI, input version, and associated RP container are returned only after unique source linkage. Frozen current DOI and labels are used only for downstream scoring. All 458 matched EPMC rows have at least one EEB output with the same original input DOI, exact timestamp, eLife provider, and type review; only 404 have a unique intermediate output, while 54 match two or three variants. Unique source-role recovery remains supported, but unique full three-stage content identity is not established for those variants. No causal reader harm is measured."
+}
