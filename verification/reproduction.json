@@ -1,5 +1,5 @@
 {
-  "release": "v1.1.0",
+  "release": "v1.2.0",
   "verification_date": "2026-10-29",
   "runtime": {
     "python": "3.13.5",
@@ -47,12 +47,6 @@
       "code_cells": 2,
       "errors": 0
     },
-    "figures": {
-      "status": "PASS",
-      "elapsed_seconds": 16.344,
-      "code_cells": 2,
-      "errors": 0
-    },
     "runtime": "Local Jupyter kernels with existing repository; not Google Colab"
   },
   "google_colab_execution": {
@@ -64,5 +58,6 @@
     "reason": "Original third-party API and review text withheld pending redistribution rights"
   },
   "source_audit_note": "Initial audit of 13,230 XML files and 517 historical captures was not repeated; preserve its documented unresolved cases",
-  "publication_status": "REVISED_PUBLIC_FILES_READY; LIVE COLAB CHECK PENDING"
+  "publication_status": "REVISED_PUBLIC_FILES_READY; LIVE COLAB CHECK PENDING",
+  "release_note": "Figures Colab notebook removed. Figure scripts remain for local reproduction; scientific inputs and result files unchanged."
 }

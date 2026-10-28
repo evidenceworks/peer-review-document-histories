@@ -1,26 +1,23 @@
-# Public peer-review document histories
+# Public peer review: document histories
 
-Code and derived data for *Discovery and documentary completeness in public peer review*. The study examines the discovery and reconstruction of review documents in the eLife publication record.
+Code and derived data for *Discovery and documentary completeness in public peer review*. The study examines how review documents can be discovered and reconstructed in the eLife publication record.
 
-## Reproduce
+## Check the results
 
-[Run the results check in Google Colab](https://colab.research.google.com/github/evidenceworks/peer-review-document-histories/blob/main/notebooks/quick.ipynb). [Rebuild the five figures in Google Colab](https://colab.research.google.com/github/evidenceworks/peer-review-document-histories/blob/main/notebooks/figures.ipynb).
+[Run in Google Colab](https://colab.research.google.com/github/evidenceworks/peer-review-document-histories/blob/main/notebooks/quick.ipynb)
 
-The results check also runs locally with Python 3.9 or newer:
+For a local check with Python 3.9 or newer:
 
 ```sh
 python scripts/quick_check.py
 ```
 
-## Files
+## Contents
 
-- `analysis/`: research code, derived data and 65 stored result files.
-- `notebooks/`: browser-based checks.
-- `scripts/` and `tests/`: local checks.
-- `verification/`: test record.
+`analysis/` contains the research code, derived data and 65 retained result files. `scripts/`, `tests/` and `verification/` contain reproduction tools and checks. The Colab notebook verifies the published results using the released data.
 
-The initial data collection is not included because some source documents have separate reuse restrictions. See [reproduction details](analysis/README.md) and [data sources and rights](third-party.md).
+The original captured source documents are not redistributed because their reuse rights differ. See [reproduction instructions](analysis/README.md) and [source rights](third-party.md).
 
-## License
+## Licenses
 
-Original code: [MIT](LICENSE). Original documentation and author-generated derived material: [CC BY 4.0](licenses/CC-BY-4.0.txt). Third-party records retain their own terms.
+Original code is [MIT licensed](LICENSE). Original documentation and author-generated derived material are [CC BY 4.0](licenses/CC-BY-4.0.txt). Third-party records retain their original terms.
