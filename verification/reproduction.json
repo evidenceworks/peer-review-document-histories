@@ -1,6 +1,6 @@
 {
-  "release": "v1.0.0",
-  "verification_date": "2026-10-28",
+  "release": "v1.1.0",
+  "verification_date": "2026-10-29",
   "runtime": {
     "python": "3.13.5",
     "system": "Linux (local test environment)"
@@ -13,7 +13,7 @@
     "result_files_reproduced": 65,
     "result_files_exactly_compared": 65,
     "scientific_boundary_controls": 52,
-    "elapsed_seconds": 27.067,
+    "elapsed_seconds": 24.114,
     "source_extraction_reexecuted": false,
     "unresolved_historical_unique_identities": 2,
     "scope": "Replay from the original separately held archive, not the public-only repository"
@@ -37,31 +37,32 @@
       "PNG",
       "TIFF"
     ],
-    "independent_scientific_checks": 2008
+    "independent_scientific_checks": 2008,
+    "font": "Liberation Serif; DejaVu Serif fallback separately tested"
   },
   "notebooks_executed_locally": {
     "quick": {
       "status": "PASS",
-      "elapsed_seconds": 2.885,
+      "elapsed_seconds": 2.864,
       "code_cells": 2,
       "errors": 0
     },
     "figures": {
       "status": "PASS",
-      "elapsed_seconds": 15.413,
+      "elapsed_seconds": 16.344,
       "code_cells": 2,
       "errors": 0
     },
     "runtime": "Local Jupyter kernels with existing repository; not Google Colab"
   },
   "google_colab_execution": {
-    "status": "NOT_TESTED",
-    "reason": "Public GitHub repository does not yet exist; user approval required before publication"
+    "status": "NOT_TESTED_IN_GOOGLE_COLAB",
+    "reason": "Notebook execution was tested locally; live Colab execution has not been observed."
   },
   "public_raw_input_replay": {
     "status": "NOT_AVAILABLE_FROM_PUBLIC_ONLY_RELEASE",
     "reason": "Original third-party API and review text withheld pending redistribution rights"
   },
   "source_audit_note": "Initial audit of 13,230 XML files and 517 historical captures was not repeated; preserve its documented unresolved cases",
-  "publication_status": "NOT_PUBLISHED"
+  "publication_status": "REVISED_PUBLIC_FILES_READY; LIVE COLAB CHECK PENDING"
 }

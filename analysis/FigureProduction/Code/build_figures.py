@@ -15,17 +15,26 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle, Polygon
 from matplotlib import font_manager
 from PIL import Image
-plt.rcParams.update({'font.family':'Nimbus Roman','font.size':9,'svg.fonttype':'path','svg.hashsalt':'oir-visual-20261026','hatch.linewidth':.45,'text.color':'#171C21'})
-# Require the selected family and its regular/bold faces. Never silently substitute.
-FONT_FAMILY='Nimbus Roman'
-FONT_FILES={}
-for weight in ['normal','bold']:
- prop=font_manager.FontProperties(family=[FONT_FAMILY],weight=weight)
- resolved=Path(font_manager.findfont(prop,fallback_to_default=False)).resolve()
- face=font_manager.get_font(str(resolved))
- if face.family_name!=FONT_FAMILY:raise RuntimeError('Unexpected font substitution: '+face.family_name)
- if face.style_name!=('Bold' if weight=='bold' else 'Regular'):raise RuntimeError('Required regular/bold face unavailable')
- FONT_FILES[weight]=resolved
+# Use a locally available serif family. Matplotlib includes DejaVu Serif as a fallback.
+FONT_FAMILY = None
+FONT_FILES = {}
+for family in ('Liberation Serif', 'Times New Roman', 'DejaVu Serif'):
+ try:
+  faces = {}
+  for weight in ('normal', 'bold'):
+   prop = font_manager.FontProperties(family=[family], weight=weight)
+   path = Path(font_manager.findfont(prop, fallback_to_default=False)).resolve()
+   face = font_manager.get_font(str(path))
+   if face.family_name != family or face.style_name not in ({'Regular', 'Book'} if weight == 'normal' else {'Bold'}):
+    raise ValueError('Missing requested font face')
+   faces[weight] = path
+  FONT_FAMILY, FONT_FILES = family, faces
+  break
+ except ValueError:
+  continue
+if FONT_FAMILY is None:
+ raise RuntimeError('A regular and bold serif font is required')
+plt.rcParams.update({'font.family':FONT_FAMILY,'font.size':9,'svg.fonttype':'path','svg.hashsalt':'oir-visual-20261026','hatch.linewidth':.45,'text.color':'#171C21'})
 FONT_RECORD={w:{'family':FONT_FAMILY,'file':f.name,'sha256':hashlib.sha256(f.read_bytes()).hexdigest()} for w,f in FONT_FILES.items()}
 NAVY='#244F68'; BLUE='#6697AF'; GOLD='#B78129'; GRAY='#DDE1E4'; INK='#171C21'; MUTED='#49535C'; RULE='#B9C1C7'
 W=510; TEXTS=[]; GEOMETRY=[]; RECEIPT=[]
@@ -59,7 +68,7 @@ def canvas(h):
 def txt(ax,x,y,s,size=9,weight='normal',ha='left',color=INK):
  face=font_manager.get_font(str(FONT_FILES[weight]))
  missing={c for c in str(s) if c not in '\n\r\t' and ord(c) not in face.get_charmap()}
- if missing:raise RuntimeError('Missing glyphs in Nimbus Roman: '+repr(missing))
+ if missing:raise RuntimeError('Missing glyphs in the selected serif font: '+repr(missing))
  t=ax.text(x,y,str(s),fontproperties=font_manager.FontProperties(fname=str(FONT_FILES[weight]),size=size),ha=ha,va='center',color=color,linespacing=1.25)
  TEXTS.append(t);return t
 

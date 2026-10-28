@@ -110,7 +110,6 @@
       "target": "epmc_endpoint_row"
     }
   ],
-  "font": "Nimbus Roman; regular and bold explicitly resolved, all glyphs checked; no font binaries distributed",
   "minimum_text_pt": 8.5,
   "arrowhead_length_pt": 5,
   "arrowhead_half_width_pt": 2.1,
