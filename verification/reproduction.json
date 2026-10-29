@@ -5,15 +5,15 @@
     "input": "Released derived records",
     "numerical_checks_passed": 1786,
     "unit_tests_passed": 3,
-    "fresh_git_checkout_windows": "PASS",
-    "fresh_git_checkout_linux": "PASS",
     "result_archive": "document_history_results.zip",
     "result_files": 8,
     "user_supplied_output": {
       "files_identical_to_local_recalculation": 7,
       "files_checked": 8,
       "remaining_difference": "Python version recorded in run_info.txt"
-    }
+    },
+    "git_checkout_autocrlf_true": "PASS",
+    "git_checkout_autocrlf_false": "PASS"
   },
   "original_research": {
     "public_result_files_matching_original_archive": 65,

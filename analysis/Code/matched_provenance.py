@@ -80,7 +80,7 @@ def repair_decision(row, bydate):
 
 def main():
     global ROOT
-    ap=argparse.ArgumentParser();ap.add_argument('--audit',type=Path,default=ROOT);ap.add_argument('--inputs',type=Path,default=ROOT.parent.parent/'inputs/v41/Results');a=ap.parse_args();ROOT=a.audit
+    ap=argparse.ArgumentParser();ap.add_argument('--audit',type=Path,default=ROOT);ap.add_argument('--inputs',type=Path,default=ROOT.parent.parent/'inputs/records/Results');a=ap.parse_args();ROOT=a.audit
     plan=load(ROOT/'raw_validation_plan.json');manifest=load(ROOT/'validation/capture_manifest.json');archive=load(a.inputs/'epmc_evaluations.json');frozen_targets={r['family']:r for r in load(a.inputs/'crossref_source_targets.json')};gold=load(a.inputs/'assessment_source_targets.json')
     repairs=[];source_all=[];eeb_all=[];famrows=[];schema=collections.Counter();fullschema=set();exact_agree=0;epnum=0
     for p in plan['sample']:

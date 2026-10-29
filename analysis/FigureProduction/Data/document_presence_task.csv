@@ -1,4 +1,0 @@
-role,sample_family_denominator,source_present_families,reconstructed_present_families,source_present_reconstructed_absent_families,source_present_reconstructed_absent_ids,affected_families_with_unresolved_rows,maximum_reconstructed_presence_with_favorable_unresolved_rows,complete_source_positive_family_sets,empty_source_family_sets
-review-article,60,60,60,0,[],0,60,37,0
-evaluation-summary,60,60,60,0,[],0,60,37,0
-reply,60,58,45,13,"[""88830"",""90674"",""106062"",""90523"",""94916"",""88366"",""102622"",""93983"",""94075"",""88049"",""88822"",""89424"",""99502""]",0,45,35,2

@@ -318,7 +318,7 @@ def main():
     args = parser.parse_args()
     repository = args.repository.resolve()
     evidence = repository / 'Evidence/SourceAudit'
-    baseline = repository / 'Inputs/v41/Results'
+    baseline = repository / 'Inputs/records/Results'
     output = controlled_output(args.output, [repository])
     retained = read(evidence / 'evidence_manifest.json')['files']
     for name, item in retained.items():

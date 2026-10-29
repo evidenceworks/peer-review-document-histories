@@ -135,7 +135,7 @@ def run(root, destination):
     shutil.copytree(root / 'Evidence/ContentValidation', content)
     empirical.mkdir()
     shutil.copyfile(root / 'Code/matched_provenance.py', provenance / 'matched_provenance.py')
-    source = root / 'Inputs/v41'
+    source = root / 'Inputs/records'
     results = source / 'Results'
     additions, histories, source_audit = work / 'ScientificAdditions', work / 'DocumentHistories', work / 'SourceAuditIntegration'
     commands = [
@@ -150,7 +150,7 @@ def run(root, destination):
         ('validate_exception_census.py', ['--source', source, '--provenance', provenance, '--output', empirical]),
         ('validate_source_case.py', ['--case', root / 'Evidence/SourceCase87297', '--source', source, '--output', empirical]),
         ('ScientificAdditions/independent_tasks.py', ['--repo', root, '--out', additions]),
-        ('ScientificAdditions/verify_task_diagnostics.py', ['--repo', root, '--pi-results', additions, '--output', additions / 'Independent']),
+        ('ScientificAdditions/verify_task_diagnostics.py', ['--repo', root, '--reference-results', additions, '--output', additions / 'Independent']),
         ('analyze_document_histories.py', ['--repository', root, '--output', histories]),
         ('verify_step_structure.py', ['--repository', root, '--comparison-results', histories, '--output', work / 'StepVerification']),
     ]
@@ -172,7 +172,11 @@ def run(root, destination):
             print('PASS ' + script, flush=True)
             if script == 'endpoint_audit.py':
                 frozen = root / 'Evidence/Provenance/raw_validation_plan.json'
-                if not semantic_equal(frozen, provenance / 'raw_validation_plan.json'):
+                original_plan = read_json(frozen)
+                reproduced_plan = read_json(provenance / 'raw_validation_plan.json')
+                original_plan.pop('label', None)
+                reproduced_plan.pop('label', None)
+                if not equal_values(original_plan, reproduced_plan):
                     raise ValueError('Corrected source projection changed the frozen sample draw')
                 shutil.copyfile(frozen, provenance / 'raw_validation_plan.json')
         expected = read_json(root / 'result_manifest.json')['files']

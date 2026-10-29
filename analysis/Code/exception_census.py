@@ -9,7 +9,7 @@ def atomic(path,value):
  tmp=path.with_suffix(path.suffix+'.tmp');tmp.write_text(json.dumps(value,indent=2)+'\n');tmp.replace(path)
 
 def run():
- ap=argparse.ArgumentParser();ap.add_argument('--audit',type=Path,default=Path(__file__).resolve().parent);ap.add_argument('--inputs',type=Path,default=Path(__file__).resolve().parents[2]/'inputs/v41/Results');ap.add_argument('--offline',action='store_true');a=ap.parse_args();root=a.audit;out=root/'exception_census';out.mkdir(exist_ok=True);raw=out/'raw';raw.mkdir(exist_ok=True)
+ ap=argparse.ArgumentParser();ap.add_argument('--audit',type=Path,default=Path(__file__).resolve().parent);ap.add_argument('--inputs',type=Path,default=Path(__file__).resolve().parents[2]/'inputs/records/Results');ap.add_argument('--offline',action='store_true');a=ap.parse_args();root=a.audit;out=root/'exception_census';out.mkdir(exist_ok=True);raw=out/'raw';raw.mkdir(exist_ok=True)
  fams=list(csv.DictReader((root/'endpoint_family_ledger.csv').open()));all_fams=fams;fams=[r for r in fams if r['has_vor']=='1' and r['exact_MED']=='1' and r['enriched_review']=='0'];links={r['family']:r for r in json.loads((a.inputs/'epmc_family_links.json').read_text())};routes={r['family']:r for r in json.loads((a.inputs/'epmc_route_details.json').read_text())}
  targets=[]
  for r in sorted(fams,key=lambda x:x['family']):

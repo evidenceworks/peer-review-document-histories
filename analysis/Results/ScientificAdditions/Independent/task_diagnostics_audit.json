@@ -1,40 +1,8 @@
 {
   "status": "PASS",
-  "implementation": "Separate standard-library implementation; no PI or V4.2 analytical module imported.",
+  "implementation": "Independent standard-library implementation; primary analysis not imported.",
   "sampling_exactly_reconstructed": true,
   "raw_sample_captures_hash_verified": 340,
-  "calculations_completed_before_PI_outputs_read": true,
-  "comparison_to_PI": {
-    "independent_row_check.csv": {
-      "all_rows_and_columns_agree": true,
-      "rows": 462
-    },
-    "family_role_coverage.csv": {
-      "all_rows_and_columns_agree": true,
-      "rows": 120
-    },
-    "role_coverage_summary.csv": {
-      "all_rows_and_columns_agree": true,
-      "rows": 3
-    },
-    "coverage_bounds.csv": {
-      "all_rows_and_columns_agree": true,
-      "rows": 4
-    },
-    "heading_baseline.csv": {
-      "all_rows_and_columns_agree": true,
-      "rows": 4
-    },
-    "timestamp_ablation.csv": {
-      "all_rows_and_columns_agree": true,
-      "rows": 3
-    },
-    "independent_results.json": {
-      "all_new_diagnostic_fields_agree": true,
-      "fields": 11,
-      "residual_census": "Replayed by the unchanged PI script and the existing full-census auditors; not independently recomputed again here."
-    }
-  },
   "counts": {
     "sampling_exactly_reproduced": true,
     "raw_files_read": 340,
@@ -333,5 +301,37 @@
     "all_fixed_cohort_changes_agree_with_source_role": true,
     "extended_agree_equals_baseline_agree_plus_fixed_cohort_changed_rows": true
   },
-  "scope": "Exploratory post-V4.2 diagnostics for the fixed stratified sample. Source DOI objects need not be independent intellectual contributions. No population recall or external classifier validation is asserted."
+  "scope": "Exploratory diagnostics for the fixed stratified sample. Source DOI objects may represent the same intellectual contribution; the study does not estimate population recall or validate an external classifier.",
+  "calculations_completed_before_reference_outputs_read": true,
+  "comparison_to_reference": {
+    "independent_row_check.csv": {
+      "all_rows_and_columns_agree": true,
+      "rows": 462
+    },
+    "family_role_coverage.csv": {
+      "all_rows_and_columns_agree": true,
+      "rows": 120
+    },
+    "role_coverage_summary.csv": {
+      "all_rows_and_columns_agree": true,
+      "rows": 3
+    },
+    "coverage_bounds.csv": {
+      "all_rows_and_columns_agree": true,
+      "rows": 4
+    },
+    "heading_baseline.csv": {
+      "all_rows_and_columns_agree": true,
+      "rows": 4
+    },
+    "timestamp_ablation.csv": {
+      "all_rows_and_columns_agree": true,
+      "rows": 3
+    },
+    "independent_results.json": {
+      "all_new_diagnostic_fields_agree": true,
+      "fields": 11,
+      "residual_census": "Reproduced by the primary analysis and full-census checks."
+    }
+  }
 }

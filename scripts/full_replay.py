@@ -37,6 +37,10 @@ def main():
                 if marker not in path:continue
                 rel=path.split(marker,1)[1]
                 if not (rel.startswith('Inputs/') or rel.startswith('Evidence/')):continue
+                # The private archive keeps its original folder names.
+                parts = Path(rel).parts
+                if len(parts) > 2 and parts[0] == 'Inputs' and parts[1] != 'records':
+                    rel = 'Inputs/records/' + '/'.join(parts[2:])
                 pp=Path(rel)
                 if pp.is_absolute() or any(part in ('..','') for part in pp.parts) or rel in seen:
                     raise ValueError('Unsafe or duplicate source path: '+rel)
@@ -49,7 +53,7 @@ def main():
                 dest.parent.mkdir(parents=True,exist_ok=True)
                 with archive.open(info) as input_stream, dest.open('wb') as output_stream:
                     shutil.copyfileobj(input_stream,output_stream)
-        # reproduce.py validates every preserved original SHA-256 before any calculation.
+        # Verify source-file integrity before reconstruction.
         subprocess.run([sys.executable,'-B',str(stage/'reproduce.py'),'--root',str(stage),'--output',str(out)],check=True)
     print('Full archived-input replay completed. Results and receipt:',out)
 

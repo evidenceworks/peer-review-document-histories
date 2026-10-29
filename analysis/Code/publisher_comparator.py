@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parent
 
 def main():
  global ROOT
- ap=argparse.ArgumentParser();ap.add_argument('--audit',type=Path,default=ROOT);ap.add_argument('--inputs',type=Path,default=ROOT.parent.parent/'inputs/v41/Results');ap.add_argument('--offline',action='store_true');args=ap.parse_args();ROOT=args.audit
+ ap=argparse.ArgumentParser();ap.add_argument('--audit',type=Path,default=ROOT);ap.add_argument('--inputs',type=Path,default=ROOT.parent.parent/'inputs/records/Results');ap.add_argument('--offline',action='store_true');args=ap.parse_args();ROOT=args.audit
  plan=json.loads((ROOT/'raw_validation_plan.json').read_text());dest=ROOT/'validation/raw/publisher_versions';dest.mkdir(parents=True,exist_ok=True)
  amend={'purpose':'Exploratory comparator using official publisher versions endpoint for the SAME frozen 120-family sample. Added after matched-pipeline results were known. No new family selection.','selector':'Filter status=vor; choose greatest integer production version, breaking by versionDate; require unique record and elifeAssessment DOI. Use its strength set, never previous VOR when current lacks assessment. Score against frozen JATS only afterward.','known_probe':'family100000 (and root87297); not aggregate sample evidence','plan_sha256':hashlib.sha256((ROOT/'raw_validation_plan.json').read_bytes()).hexdigest(),'created_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()}
  if not (ROOT/'validation/publisher_comparator_amendment.json').exists():

@@ -1,7 +1,7 @@
 """Independent raw-source reconstruction and exploratory task diagnostics.
 
 No modules from the supplied analytical implementation are imported. All inputs
-are frozen V4.2 captures. This audit does not equate a source DOI with an
+are archived captures. This audit does not equate a source DOI with an
 independent intellectual contribution or use the stratified sample unweighted
 as a population estimate.
 """
@@ -179,9 +179,9 @@ def main(repo,out):
     # identifier checks. Do not count source-oracle identifiers as deployable gains.
     base=repo/'Evidence/Provenance'
     manifest=read(base/'exception_census/manifest.json')
-    links={str(x['family']):x for x in read(repo/'Inputs/v41/Results/epmc_family_links.json')}
-    routes={str(x['family']):x for x in read(repo/'Inputs/v41/Results/epmc_route_details.json')}
-    records=read(repo/'Inputs/v41/Results/epmc_route_records.json')
+    links={str(x['family']):x for x in read(repo/'Inputs/records/Results/epmc_family_links.json')}
+    routes={str(x['family']):x for x in read(repo/'Inputs/records/Results/epmc_route_details.json')}
+    records=read(repo/'Inputs/records/Results/epmc_route_records.json')
     residual=[]
     for cap in manifest:
         f=str(cap['family']);raw=(base/cap['path']).read_bytes()

@@ -228,8 +228,8 @@
     },
     {
       "path": "ScientificAdditions/Independent/task_diagnostics_audit.json",
-      "bytes": 10392,
-      "sha256": "098973a8bfccb485845c077190dfb2bc2dd807de6c597210825b14fe8190789d"
+      "bytes": 10343,
+      "sha256": "8078f8698f170a874ae92c30f0f14c9be76b8c91fe8a24d8883eae447a9ee1f9"
     },
     {
       "path": "ScientificAdditions/coverage_bounds.csv",

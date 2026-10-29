@@ -12,7 +12,7 @@ from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / 'analysis' / 'FigureProduction' / 'Data'
+DATA = ROOT / 'analysis' / 'data'
 RESULTS = ROOT / 'analysis' / 'Results'
 
 
@@ -22,7 +22,10 @@ def read_csv(path):
 
 
 def records(name):
-    return read_csv(DATA / name)
+    source = DATA / name
+    if not source.is_file():
+        source = RESULTS / 'DocumentHistories' / name
+    return read_csv(source)
 
 
 def count(rows, key):

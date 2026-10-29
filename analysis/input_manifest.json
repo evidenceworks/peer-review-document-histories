@@ -2,57 +2,57 @@
   "algorithm": "SHA-256",
   "files": [
     {
-      "path": "Inputs/v41/Results/assessment_source_targets.json",
+      "path": "Inputs/records/Results/assessment_source_targets.json",
       "bytes": 4078069,
       "sha256": "d9365d61c224094a099ca5573711e5bfaac002f1926ee2688d99fbc400904471"
     },
     {
-      "path": "Inputs/v41/Results/crossref_records.json",
+      "path": "Inputs/records/Results/crossref_records.json",
       "bytes": 8362876,
       "sha256": "a848e6421b30e03aedb695ba026130425ace0ec881c2fed102d8a59a18acb08e"
     },
     {
-      "path": "Inputs/v41/Results/crossref_review_graph.json",
+      "path": "Inputs/records/Results/crossref_review_graph.json",
       "bytes": 22542296,
       "sha256": "9bbfb778e1f9089b4b18e71f897c5ca4c1c9e47f454eb0ede32ceec64fd39a20"
     },
     {
-      "path": "Inputs/v41/Results/crossref_source_targets.json",
+      "path": "Inputs/records/Results/crossref_source_targets.json",
       "bytes": 1216492,
       "sha256": "d5aeab9dd098d9ba70b77e28877d706b8e855d046d36414b7ff9323c0d899282"
     },
     {
-      "path": "Inputs/v41/Results/epmc_evaluations.json",
+      "path": "Inputs/records/Results/epmc_evaluations.json",
       "bytes": 14279246,
       "sha256": "97532799d0f5f439f862b7de86b9dd82439068ecd9b0d0426d6f7b8a18149cc9"
     },
     {
-      "path": "Inputs/v41/Results/epmc_family_links.json",
+      "path": "Inputs/records/Results/epmc_family_links.json",
       "bytes": 2875962,
       "sha256": "671a49052885dad230247a322d6befc8fe271febd541dd1bdfee9a93b930700c"
     },
     {
-      "path": "Inputs/v41/Results/epmc_route_details.json",
+      "path": "Inputs/records/Results/epmc_route_details.json",
       "bytes": 1895173,
       "sha256": "c6a9606e4d5456862c62d85c616a2c1bc61411a78cc225aa506ae653d10268aa"
     },
     {
-      "path": "Inputs/v41/Results/epmc_route_ledger.csv",
+      "path": "Inputs/records/Results/epmc_route_ledger.csv",
       "bytes": 365819,
       "sha256": "6cc55fd3171f766ab8c10d0e09426d99bf989a3f2d84a85d72dad90c5d6a3b00"
     },
     {
-      "path": "Inputs/v41/Results/epmc_route_records.json",
+      "path": "Inputs/records/Results/epmc_route_records.json",
       "bytes": 13940932,
       "sha256": "22fa3c7d82fc33279c2f91bdc9ab92af866da9b4d053bd308dd2ec4d078ef518"
     },
     {
-      "path": "Inputs/v41/Results/source_states.json",
+      "path": "Inputs/records/Results/source_states.json",
       "bytes": 18251471,
       "sha256": "cdbd904e14055ce5324a3942316245eec2f18111b6b24cef08c4a4a16ad7ac54"
     },
     {
-      "path": "Inputs/v41/Results/typed_retrieval_details.json",
+      "path": "Inputs/records/Results/typed_retrieval_details.json",
       "bytes": 2388626,
       "sha256": "f18741bf377858c240aaace002fc2c1afaeed83405e2b310dacf06e7f6bc51d0"
     },

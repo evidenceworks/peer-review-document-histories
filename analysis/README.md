@@ -16,4 +16,4 @@ The original publisher documents and historical service responses are retained s
 python scripts/full_replay.py --archive /path/to/source-archive.zip --output ../review_replay
 ```
 
-See [third-party sources and rights](../third-party.md). Code and source tables for the article figures are retained in `FigureProduction/`.
+See [third-party sources and rights](../third-party.md).

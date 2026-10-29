@@ -1,8 +1,8 @@
-"""Independent verification of the V4.2.1 task diagnostics from frozen captures.
+"""Independent verification of the task diagnostics from archived captures.
 
-This implementation imports no PI or V4.2 analytical module. Predictions and
-source-set counts are computed before the PI result files are opened for
-comparison. The PI program is retained separately and unchanged.
+This implementation does not import the primary analytical module. Predictions and
+source-set counts are computed before the reference result files are opened for
+comparison. The primary analysis is run separately.
 
 Only the standard library is required. No network calls are made. An endpoint
 timestamp without an offset is treated as UTC for the recorded comparisons,
@@ -128,7 +128,7 @@ def source_objects(family, document):
 
 
 def opening_line(text):
-    # Deliberately limited to the PI's stated 180-character opening window.
+    # Use the specified 180-character opening window.
     start = text.lstrip("\ufeff \t\r\n")[:180]
     first = start.splitlines()[0] if start else ""
     first = re.sub(r"^\s*#+\s*", "", first).strip().strip("*_ ")
@@ -253,8 +253,8 @@ def compare_records(expected, supplied, name):
                 require(str(value) == frozen[key], f"{name}: {index} {key}: {value!r} != {frozen[key]!r}")
 
 
-def run(repo, pi_results, output):
-    repo, pi_results, output = Path(repo), Path(pi_results), Path(output)
+def run(repo, reference_results, output):
+    repo, reference_results, output = Path(repo), Path(reference_results), Path(output)
     require(not output.exists(), "Independent output directory must not already exist")
     plan = load_json(repo / "Evidence/Provenance/raw_validation_plan.json")
     frame = load_csv(repo / "Results/Provenance/endpoint_family_ledger.csv")
@@ -429,7 +429,7 @@ def run(repo, pi_results, output):
                          "ambiguous_among_458_fine_matches": counts["ambiguous_fixed_cohort"]}
                         for level, counts in ablation_counts.items()]
 
-    # Only after all predictions and counts exist do we open the PI output tables.
+    # Compare with reference results after completing the independent calculations.
     comparisons = {}
     for name, computed in (("independent_row_check.csv", pi_row_projection),
                            ("family_role_coverage.csv", family_rows),
@@ -437,9 +437,9 @@ def run(repo, pi_results, output):
                            ("coverage_bounds.csv", bounds),
                            ("heading_baseline.csv", heading_summary),
                            ("timestamp_ablation.csv", ablation_summary)):
-        compare_records(computed, load_csv(pi_results / name), name)
+        compare_records(computed, load_csv(reference_results / name), name)
         comparisons[name] = {"all_rows_and_columns_agree": True, "rows": len(computed)}
-    pi_summary = load_json(pi_results / "independent_results.json")
+    reference_summary = load_json(reference_results / "independent_results.json")
     summary_fields = {"sampling_exactly_reproduced": True, "raw_files_read": len(read_captures),
                       "sample_families": len(family_rows), "positive_sample_families": len(positive),
                       "eligible_rows": len(diagnostic_rows), "matched": sum(row["status"] == "matched" for row in diagnostic_rows),
@@ -451,9 +451,9 @@ def run(repo, pi_results, output):
                                            "wrong_rows": sum(row["heading_wrong"] for row in diagnostic_rows),
                                            "matched_abstentions": sum(row["status"] == "matched" and not row["heading_only_role"] for row in diagnostic_rows)}}
     for key, value in summary_fields.items():
-        require(pi_summary[key] == value, f"PI summary differs: {key}")
+        require(reference_summary[key] == value, f"Reference summary differs: {key}")
     comparisons["independent_results.json"] = {"all_new_diagnostic_fields_agree": True, "fields": len(summary_fields),
-                                               "residual_census": "Replayed by the unchanged PI script and the existing full-census auditors; not independently recomputed again here."}
+                                               "residual_census": "Reproduced by the primary analysis and full-census checks."}
     require(all(counts["missing_fixed_cohort"] == 0 for counts in ablation_counts.values()), "Coarsening unexpectedly loses an original candidate")
     matched_sensitivity_changes = [row for row in sensitivity_changes if row["in_fixed_matched_cohort"]]
     sensitivity_controls = {
@@ -465,9 +465,9 @@ def run(repo, pi_results, output):
     require(all(sensitivity_controls.values()), "A post hoc heading count control failed")
 
     proof = {
-        "status": "PASS", "implementation": "Separate standard-library implementation; no PI or V4.2 analytical module imported.",
+        "status": "PASS", "implementation": "Independent standard-library implementation; primary analysis not imported.",
         "sampling_exactly_reconstructed": True, "raw_sample_captures_hash_verified": len(read_captures),
-        "calculations_completed_before_PI_outputs_read": True, "comparison_to_PI": comparisons,
+        "calculations_completed_before_reference_outputs_read": True, "comparison_to_reference": comparisons,
         "counts": summary_fields, "role_coverage": role_summary, "coverage_bounds": bounds,
         "bound_assumption": "At most one additional captured source DOI object can be assigned to each unresolved endpoint row, within its own family. This is an accounting bound for that assignment, not proof of service-wide absence or of the unit represented by an unresolved row.",
         "role_bounds_are_separate_not_jointly_attainable": True,
@@ -500,7 +500,7 @@ def run(repo, pi_results, output):
         "precision_all_eligible_rows": {level: dict(counts) for level, counts in ablation_counts.items()},
         "scientific_boundary_controls": boundary_controls(),
         "posthoc_heading_count_controls": sensitivity_controls,
-        "scope": "Exploratory post-V4.2 diagnostics for the fixed stratified sample. Source DOI objects need not be independent intellectual contributions. No population recall or external classifier validation is asserted."
+        "scope": "Exploratory diagnostics for the fixed stratified sample. Source DOI objects may represent the same intellectual contribution; the study does not estimate population recall or validate an external classifier."
     }
     output.mkdir(parents=True)
     write_csv(output / "source_object_coverage.csv", sorted(object_rows, key=lambda row: (row["family"], row["source_doi"])))
@@ -509,7 +509,7 @@ def run(repo, pi_results, output):
     write_csv(output / "heading_lexicon_sensitivity.csv", sensitivity_changes)
     (output / "task_diagnostics_audit.json").write_text(json.dumps(proof, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps({"status": "PASS", "raw_sample_captures_verified": len(read_captures),
-                      "PI_tables_independently_recomputed": 6, "additional_PI_summary_checked": True,
+                      "tables_independently_recomputed": 6, "reference_summary_checked": True,
                       "scientific_boundary_controls": len(proof["scientific_boundary_controls"]),
                       "source_objects_positive": total_source, "matched_source_objects": total_matched,
                       "conditional_all_roles_lower_bound": bounds[-1]["family_respecting_lower_bound"]}, indent=2))
@@ -519,7 +519,7 @@ def run(repo, pi_results, output):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo", required=True, type=Path)
-    parser.add_argument("--pi-results", required=True, type=Path)
+    parser.add_argument("--reference-results", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)
     args = parser.parse_args()
-    run(args.repo, args.pi_results, args.output)
+    run(args.repo, args.reference_results, args.output)

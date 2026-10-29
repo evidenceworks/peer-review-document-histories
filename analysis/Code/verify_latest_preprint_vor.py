@@ -77,7 +77,7 @@ def main():
     assert not output.exists(), 'Output must be a new directory'
     assert output != repository and repository not in output.parents and output not in repository.parents, 'Output overlaps the repository'
     paths = {
-        'before': repository / 'Inputs/v41/Results/source_states.json',
+        'before': repository / 'Inputs/records/Results/source_states.json',
         'after': repository / 'Evidence/SourceAudit/corrected_source_states.json',
     }
     hashes = {name: digest(path) for name, path in paths.items()}

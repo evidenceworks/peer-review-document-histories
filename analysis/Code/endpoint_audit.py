@@ -89,7 +89,7 @@ def main():
         frame=sorted([r for r in focal if r['residual_class']==cl],key=lambda r:r['family'])
         for r in rng.sample(frame,min(20,len(frame))):
             sample.append({'family':r['family'],'stratum':cl,'stratum_N':len(frame),'stratum_n':min(20,len(frame)),'endpoints':sorted(set(r['native_targets'].split('|')+r['bridge_targets'].split('|'))-{''}),'original_preprint_dois':links[r['family']]['original_preprint_dois']})
-    plan={'label':'Exploratory V4.2 stratified audit, selected after endpoint classes were observed and before new raw captures. No claim of preregistration.','seed':SEED,'population':'3,547 source-VOR families with exact Europe PMC MED record','sampling':'20 family simple random draws per disjoint observable endpoint stratum, or census if smaller. No replacement. No inferential pooling across unequal fractions.','sample':sample}
+    plan={'label':'Exploratory stratified audit, selected after endpoint classes were observed and before response collection; not preregistered.','seed':SEED,'population':'3,547 source-VOR families with exact Europe PMC MED record','sampling':'20 family simple random draws per disjoint observable endpoint stratum, or census if smaller. No replacement. No inferential pooling across unequal fractions.','sample':sample}
     (a.output/'raw_validation_plan.json').write_text(json.dumps(plan,indent=2)+'\n')
     print(json.dumps(report,indent=2));print('validation_sample_n',len(sample))
 

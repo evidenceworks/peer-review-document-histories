@@ -1,4 +1,4 @@
-"""Independently validate the V4.2 matched provenance sample from raw bytes.
+"""Independently validate matched provenance from archived response bytes.
 
 The source parser, matcher, sample reconstruction, and API comparator here do
 not import the producing analysis. Only focused boundary tests optionally call
