@@ -1,23 +1,23 @@
 # Public peer review: document histories
 
-Code and derived data for *Discovery and documentary completeness in public peer review*. The study examines the discovery of peer-review documents and the reconstruction of evaluation histories in the eLife publication record.
+Code and derived data for *Discovery and documentary completeness in public peer review*. The study examines how review documents can be discovered and matched to publisher records in the eLife publication history.
 
 ## Reproduce the results
 
-- [Quick check in Google Colab](https://colab.research.google.com/github/evidenceworks/peer-review-document-histories/blob/main/notebooks/quick.ipynb): review-event coverage and principal document-history counts.
-- [Core analysis in Google Colab](https://colab.research.google.com/github/evidenceworks/peer-review-document-histories/blob/main/notebooks/core.ipynb): document coverage, timestamp precision and independent comparisons.
+[Run the analysis in Google Colab](https://colab.research.google.com/github/evidenceworks/peer-review-document-histories/blob/main/notebooks/reproduce.ipynb)
 
-Each notebook downloads a ZIP containing calculated results and a short summary. To run locally with Python 3.9 or newer:
+The notebook recalculates review-event coverage, document reconstruction, timestamp-precision sensitivity and version comparisons. It downloads `document_history_results.zip` with the calculated results and numerical checks.
+
+For a local run with Python 3.9 or newer:
 
 ```sh
-python scripts/quick_check.py --output aOIR_Quick.zip
-python scripts/core_check.py --output aOIR_Core.zip
+python scripts/reproduce.py
 ```
 
-## Files
+## Contents
 
-`analysis/` contains the research code, derived records and 65 original result files. `scripts/` and `tests/` provide the public reproduction checks. Original source captures remain outside this repository; see [reproduction details](analysis/README.md) and [source rights](third-party.md).
+`analysis/` contains the research code, derived data and 65 retained result files. `scripts/` and `tests/` contain the reproduction program and tests. The original publisher documents and historical service responses are held separately. See [reproduction details](analysis/README.md) and [source rights](third-party.md).
 
 ## Licenses
 
-Original code is [MIT licensed](LICENSE). Original documentation and author-generated derived data are available under [CC BY 4.0](licenses/CC-BY-4.0.txt). Third-party records retain their own terms.
+Original code is [MIT licensed](LICENSE). Original documentation and author-generated derived data are [CC BY 4.0 licensed](licenses/CC-BY-4.0.txt). Third-party records retain their original terms.

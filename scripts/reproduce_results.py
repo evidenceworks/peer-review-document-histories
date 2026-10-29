@@ -29,6 +29,14 @@ def count(rows, key):
     return sum(int(row[key]) for row in rows)
 
 
+def display_value(value):
+    if isinstance(value, set):
+        return json.dumps(sorted(value), ensure_ascii=False)
+    if isinstance(value, (dict, list, tuple)):
+        return json.dumps(value, sort_keys=True, ensure_ascii=False)
+    return str(value)
+
+
 class Analysis:
     def __init__(self):
         self.measures = []
@@ -44,7 +52,8 @@ class Analysis:
     def check(self, label, observed, reference):
         if observed != reference:
             raise AssertionError(f'{label}: observed {observed!r}; reference {reference!r}')
-        self.checks.append(dict(check=label, observed=str(observed), reference=str(reference), result='PASS'))
+        self.checks.append(dict(check=label, observed=display_value(observed),
+                                reference=display_value(reference), result='PASS'))
 
     def table(self, name, rows):
         if not rows:
@@ -52,7 +61,7 @@ class Analysis:
         self.tables[name] = rows
 
 
-def quick():
+def principal_measures():
     a = Analysis()
     whole = [r for r in records('Families.csv') if r['exact_MED'] == '1']
     a.check('Canonical MED population', len(whole), 3547)
@@ -130,8 +139,8 @@ def precision_key(moment, mode):
     return moment
 
 
-def core():
-    a = quick()
+def full_analysis():
+    a = principal_measures()
     families = records('family_coverage_structure.csv')
     objects = records('source_object_structure.csv')
     steps = records('evaluation_step_coverage.csv')
@@ -263,44 +272,37 @@ def csv_text(rows):
     return buffer.getvalue()
 
 
-def output_files(analysis, mode):
-    all_files = {'results.csv': csv_text(analysis.measures), 'checks.csv': csv_text(analysis.checks)}
+def output_files(analysis):
+    all_files = {'results.csv': csv_text(analysis.measures),
+                 'checks.csv': csv_text(analysis.checks)}
     all_files.update({name: csv_text(rows) for name, rows in analysis.tables.items()})
-    intro = [
+    all_files['summary.txt'] = '\n'.join([
         'Public peer review: document histories',
-        'Reproduction from the released derived records',
         '',
-        f'{mode} analysis: PASS',
-        f'Scientific checks: {len(analysis.checks)} passed',
-        'MED population: 3,547 families; combined review-event coverage: 3,409.',
-        'Fixed stratified sample: 60 families; 471 publisher source documents.',
-        'Uniquely reconstructed documents: 362; reconstructed evaluation steps: 91 of 117.',
-    ]
-    if mode == 'Core':
-        intro += [
-            'Timestamp ablation: 458 original matches retained at microsecond precision;',
-            '273 at whole-second precision and 5 at calendar-day precision.',
-            'The sample consists of 20 families from each of three strata.',
-        ]
-    intro += ['', 'The public analysis uses derived records. Original source capture replay requires the separately held source archive.']
-    all_files['summary.txt'] = '\n'.join(intro) + '\n'
-    all_files['run_info.txt'] = (f'Analysis: {mode}\nPython: {platform.python_version()}\n'
-                                 'Inputs: public derived records\nRandom sampling: none\n'
-                                 'Reference: published study results\n')
+        f'Scientific checks passed: {len(analysis.checks)}',
+        'Review events identified: 3,409 of 3,547 families.',
+        'Reconstructed source documents: 362 of 471 in the stratified sample.',
+        'Complete evaluation steps: 91 of 117.',
+        'Source matches retained after timestamp truncation:',
+        '  seconds: 273 of 458; calendar days: 5 of 458.',
+        '',
+        'Based on the released derived records.',
+        'Original source collection requires the separately retained records.',
+    ]) + '\n'
+    all_files['run_info.txt'] = (f'Python: {platform.python_version()}\n'
+                                 'Input: released derived records\n'
+                                 'Random sampling: none\n'
+                                 'Results: recalculated from the public data\n')
     return all_files
 
 
-def run(mode='Quick', output=None):
-    analysis = quick() if mode == 'Quick' else core() if mode == 'Core' else None
-    if analysis is None:
-        raise ValueError('Expected Quick or Core')
-    if output is not None:
-        path = Path(output).expanduser().resolve()
-        path.parent.mkdir(parents=True, exist_ok=True)
-        with ZipFile(path, 'w', ZIP_DEFLATED) as archive:
-            for name, contents in output_files(analysis, mode).items():
-                archive.writestr(name, contents.encode('utf-8'))
-        print(f'{mode}: PASS | {len(analysis.checks)} scientific checks | {path.name}')
-    else:
-        print(f'{mode}: PASS | {len(analysis.checks)} scientific checks')
+def run(output='outputs/document_history_results.zip'):
+    analysis = full_analysis()
+    path = Path(output).expanduser().resolve()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with ZipFile(path, 'w', ZIP_DEFLATED) as archive:
+        for name, contents in output_files(analysis).items():
+            archive.writestr(name, contents.encode('utf-8'))
+    print(f'Checks passed: {len(analysis.checks)} of {len(analysis.checks)}')
+    print(f'Results: {path}')
     return analysis

@@ -1,4 +1,4 @@
-"""Source-set structure and retrieval diagnostics for the frozen aOIR sample.
+"""Source-set structure and retrieval diagnostics for the prespecified study sample.
 
 Standard library only. Reconstructs publisher objects and endpoint candidates
 from hash-verified raw captures without importing prior analysis programs.

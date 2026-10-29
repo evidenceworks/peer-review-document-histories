@@ -32,7 +32,7 @@ def run():
   receipt=dict(t);receipt['reused']=False
   for i in range(3):
    try:
-    with urllib.request.urlopen(urllib.request.Request(t['url'],headers={'User-Agent':'aOIR-provenance-exception-audit/4.2'}),timeout=40) as r:b=r.read();status=r.status
+    with urllib.request.urlopen(urllib.request.Request(t['url'],headers={'User-Agent':'peer-review-history-research/1.0'}),timeout=40) as r:b=r.read();status=r.status
     json.loads(b);p.write_bytes(b);receipt.update(status=status,sha256=hashlib.sha256(b).hexdigest(),bytes=len(b),capture_utc=datetime.datetime.now(datetime.timezone.utc).isoformat());break
    except urllib.error.HTTPError as e:
     receipt.update(status=e.code,error=str(e))

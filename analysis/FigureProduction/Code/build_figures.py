@@ -8,7 +8,7 @@ a=p.parse_args(); ROOT=Path(__file__).resolve().parents[1]; D=ROOT/'Data'
 for name,expected in json.loads((D/'input_manifest.json').read_text()).items():
  if hashlib.sha256((D/name).read_bytes()).hexdigest()!=expected:raise ValueError('Frozen figure input changed: '+name)
 OUT=a.output.resolve(); OUT.mkdir(parents=True,exist_ok=False)
-os.environ.setdefault('MPLCONFIGDIR',tempfile.mkdtemp(prefix='oir-font-cache-'))
+os.environ.setdefault('MPLCONFIGDIR',tempfile.mkdtemp(prefix='figure-font-cache-'))
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -34,7 +34,7 @@ for family in ('Liberation Serif', 'Times New Roman', 'DejaVu Serif'):
   continue
 if FONT_FAMILY is None:
  raise RuntimeError('A regular and bold serif font is required')
-plt.rcParams.update({'font.family':FONT_FAMILY,'font.size':9,'svg.fonttype':'path','svg.hashsalt':'oir-visual-20261026','hatch.linewidth':.45,'text.color':'#171C21'})
+plt.rcParams.update({'font.family':FONT_FAMILY,'font.size':9,'svg.fonttype':'path','svg.hashsalt':'review-history-figures','hatch.linewidth':.45,'text.color':'#171C21'})
 FONT_RECORD={w:{'family':FONT_FAMILY,'file':f.name,'sha256':hashlib.sha256(f.read_bytes()).hexdigest()} for w,f in FONT_FILES.items()}
 NAVY='#244F68'; BLUE='#6697AF'; GOLD='#B78129'; GRAY='#DDE1E4'; INK='#171C21'; MUTED='#49535C'; RULE='#B9C1C7'
 W=510; TEXTS=[]; GEOMETRY=[]; RECEIPT=[]

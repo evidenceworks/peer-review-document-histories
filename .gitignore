@@ -10,11 +10,9 @@ Thumbs.db
 figures_output/
 reproduction_output/
 private/
-*_private.zip
 *.sqlite3
 *.tmp
 
-# Local results
+# Results created during local runs
 outputs/
-aOIR_Quick.zip
-aOIR_Core.zip
+*.zip

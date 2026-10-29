@@ -18,7 +18,7 @@ def main():
   receipt={'family':f,'url':url}
   for i in range(3):
    try:
-    with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'aOIR-independent-provenance-audit/4.2'}),timeout=40) as r:b=r.read();s=r.status
+    with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'peer-review-history-research/1.0'}),timeout=40) as r:b=r.read();s=r.status
     json.loads(b);p.write_bytes(b);receipt.update(status=s,bytes=len(b),sha256=hashlib.sha256(b).hexdigest(),capture_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),path=str(p));break
    except Exception as e:
     receipt.update(status='error',error=repr(e));time.sleep(1+i)
