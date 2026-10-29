@@ -1,2 +1,9 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Preserve the original CSV records on all platforms.
+*.csv -text
+
+# Consistent line endings for source code and documentation.
+*.py text eol=lf
+*.ipynb text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf

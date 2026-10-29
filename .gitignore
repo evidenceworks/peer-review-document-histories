@@ -13,3 +13,8 @@ private/
 *_private.zip
 *.sqlite3
 *.tmp
+
+# Local results
+outputs/
+aOIR_Quick.zip
+aOIR_Core.zip

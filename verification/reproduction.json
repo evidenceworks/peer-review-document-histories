@@ -1,63 +1,35 @@
 {
-  "release": "v1.2.0",
-  "verification_date": "2026-10-29",
-  "runtime": {
-    "python": "3.13.5",
-    "system": "Linux (local test environment)"
-  },
-  "original_archived_source_replay": {
+  "date": "2026-10-29",
+  "status": "PASS_LOCAL",
+  "source_archive_replay": {
     "status": "PASS",
-    "original_input_files": 2188,
-    "original_input_sha256": "2188/2188 PASS",
-    "stages": 14,
-    "result_files_reproduced": 65,
-    "result_files_exactly_compared": 65,
-    "scientific_boundary_controls": 52,
-    "elapsed_seconds": 24.114,
-    "source_extraction_reexecuted": false,
-    "unresolved_historical_unique_identities": 2,
-    "scope": "Replay from the original separately held archive, not the public-only repository"
+    "result_files_regenerated": 65,
+    "result_files_semantically_equal": 65,
+    "scientific_boundary_controls_passed": 52,
+    "input_records_verified": 2188,
+    "note": "Replay used the separate original research archive; original live collection was not repeated."
   },
-  "public_only_quick_check": {
-    "status": "PASS",
-    "assertions": 182,
-    "result_sha256_verified": 65,
-    "figure_input_sha256_verified": 20,
-    "requires_third_party_packages": false
-  },
-  "fresh_environment_python": {
-    "status": "PASS",
-    "mode": "Isolated standard-library Python virtual environment, quick check and 3 unit tests"
-  },
-  "public_figure_rebuild": {
-    "status": "PASS",
-    "figures": 5,
-    "formats": [
-      "SVG",
-      "PNG",
-      "TIFF"
-    ],
-    "independent_scientific_checks": 2008,
-    "font": "Liberation Serif; DejaVu Serif fallback separately tested"
-  },
-  "notebooks_executed_locally": {
-    "quick": {
+  "public_reproduction": {
+    "Quick": {
       "status": "PASS",
-      "elapsed_seconds": 2.864,
-      "code_cells": 2,
-      "errors": 0
+      "scientific_checks": 25,
+      "local_notebook_seconds": 2.563
     },
-    "runtime": "Local Jupyter kernels with existing repository; not Google Colab"
+    "Core": {
+      "status": "PASS",
+      "scientific_checks": 1786,
+      "local_notebook_seconds": 2.724
+    },
+    "third_party_python_packages_required": false,
+    "fresh_git_checkout_windows": "PASS",
+    "fresh_git_checkout_linux": "PASS",
+    "original_result_files_preserved": 65,
+    "public_unit_tests": "3/3 PASS",
+    "scientific_change_detection": "PASS"
   },
-  "google_colab_execution": {
-    "status": "NOT_TESTED_IN_GOOGLE_COLAB",
-    "reason": "Notebook execution was tested locally; live Colab execution has not been observed."
-  },
-  "public_raw_input_replay": {
-    "status": "NOT_AVAILABLE_FROM_PUBLIC_ONLY_RELEASE",
-    "reason": "Original third-party API and review text withheld pending redistribution rights"
-  },
-  "source_audit_note": "Initial audit of 13,230 XML files and 517 historical captures was not repeated; preserve its documented unresolved cases",
-  "publication_status": "REVISED_PUBLIC_FILES_READY; LIVE COLAB CHECK PENDING",
-  "release_note": "Figures Colab notebook removed. Figure scripts remain for local reproduction; scientific inputs and result files unchanged."
+  "google_colab": "NOT_TESTED_ON_GOOGLE_COLAB",
+  "notes": [
+    "Original publisher and historical service captures are not part of the public repository.",
+    "The public notebooks calculate from the released derived records."
+  ]
 }
