@@ -1,35 +1,26 @@
 {
   "date": "2026-10-29",
-  "status": "PASS_LOCAL",
-  "source_archive_replay": {
-    "status": "PASS",
-    "result_files_regenerated": 65,
-    "result_files_semantically_equal": 65,
-    "scientific_boundary_controls_passed": 52,
-    "input_records_verified": 2188,
-    "note": "Replay used the separate original research archive; original live collection was not repeated."
-  },
-  "public_reproduction": {
-    "Quick": {
-      "status": "PASS",
-      "scientific_checks": 25,
-      "local_notebook_seconds": 2.563
-    },
-    "Core": {
-      "status": "PASS",
-      "scientific_checks": 1786,
-      "local_notebook_seconds": 2.724
-    },
-    "third_party_python_packages_required": false,
+  "public_analysis": {
+    "notebook": "notebooks/reproduce.ipynb",
+    "input": "Released derived records",
+    "numerical_checks_passed": 1786,
+    "unit_tests_passed": 3,
     "fresh_git_checkout_windows": "PASS",
     "fresh_git_checkout_linux": "PASS",
-    "original_result_files_preserved": 65,
-    "public_unit_tests": "3/3 PASS",
-    "scientific_change_detection": "PASS"
+    "result_archive": "document_history_results.zip",
+    "result_files": 8,
+    "user_supplied_output": {
+      "files_identical_to_local_recalculation": 7,
+      "files_checked": 8,
+      "remaining_difference": "Python version recorded in run_info.txt"
+    }
   },
-  "google_colab": "NOT_TESTED_ON_GOOGLE_COLAB",
-  "notes": [
-    "Original publisher and historical service captures are not part of the public repository.",
-    "The public notebooks calculate from the released derived records."
-  ]
+  "original_research": {
+    "public_result_files_matching_original_archive": 65,
+    "previous_source_reproduction": {
+      "result_files_regenerated": 65,
+      "scientific_controls_passed": 52
+    },
+    "original_captures": "Retained separately; original source collection was not repeated"
+  }
 }
