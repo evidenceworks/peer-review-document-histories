@@ -1,23 +1,26 @@
-# Public peer review: document histories
+# Public peer review document histories
 
-Code and derived data for *Discovery and documentary completeness in public peer review*. The study examines how review documents can be discovered and matched to publisher records in the eLife publication history.
+Data and code for *Discovery and documentary completeness in public peer review*.
 
-## Reproduce the results
+[Run in Google Colab](https://colab.research.google.com/github/evidenceworks/peer-review-document-histories/blob/main/notebooks/reproduce.ipynb)
 
-[Run the analysis in Google Colab](https://colab.research.google.com/github/evidenceworks/peer-review-document-histories/blob/main/notebooks/reproduce.ipynb)
+## Reproduce
 
-The notebook recalculates review-event coverage, document reconstruction, timestamp-precision sensitivity and version comparisons. It downloads `document_history_results.zip` with the calculated results and numerical checks.
-
-For a local run with Python 3.9 or newer:
+Extract the package and, from `Repository/`, run with Python 3.9 or newer:
 
 ```sh
 python scripts/reproduce.py
+python -m unittest discover -s tests -v
 ```
 
-## Contents
+The script writes `statistics.json`, `family_outcomes.csv`, `step_coverage.csv` and `conditional_estimates.csv` to `results/`. The notebook reproduces these outputs from the accompanying package.
 
-`analysis/` contains the research code, derived data and 65 retained result files. `scripts/` and `tests/` contain the reproduction program and tests. The original publisher documents and historical service responses are held separately. See [reproduction details](analysis/README.md) and [source rights](third-party.md).
+## Data
 
-## Licenses
+The [data dictionary](data/dictionary.txt) defines the eLife, BMC and EMBO records, selections and counting units. To regenerate text fingerprints from separately retained EEB response bodies:
 
-Original code is [MIT licensed](LICENSE). Original documentation and author-generated derived data are [CC BY 4.0 licensed](licenses/CC-BY-4.0.txt). Third-party records retain their original terms.
+```sh
+python scripts/extract_text_identity.py --source-dir /path/to/response_bodies --output text_identity.csv
+```
+
+Original code is MIT licensed. Author-generated analytical data and documentation are CC BY 4.0. Original source rights are acknowledged in [third-party.md](third-party.md).

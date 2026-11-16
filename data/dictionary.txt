@@ -1,0 +1,136 @@
+DATA UNITS AND CONVENTIONS
+
+The three eLife URL strata have the following reader-facing labels:
+Generic URL = review_with_generic_url
+DOI URL = review_with_DOI_url
+No URL = review_no_url
+The data and calculation criteria retain the codes on the right.
+
+Binary fields use 1/0 or True/False, as encoded in each CSV; JSON uses
+true/false. The reproduction program accepts 1 and true (case-insensitively)
+as positive, and 0 and false as negative. Missing or unrecognized binary values
+raise an error. These values indicate whether the criterion defined for that
+field was met. An empty value retains its field-specific meaning. For display,
+True/1 means Yes and False/0 means No.
+
+elife_documents.csv: one distinct publisher output DOI per row (1,803 rows).
+family is the related article-family identifier. role is review-article,
+evaluation-summary or reply. step_id and step_rank retain the source-declared
+activity and its order. published retains exact timestamp precision; input_dois
+and input_versions describe the evaluated manuscript. endpoint, intermediary
+and augmented are binary source-correspondence indicators. Multiple input
+identifiers are separated by a vertical bar.
+
+elife_endpoint_rows.csv: one eligible endpoint assertion (2,264 rows).
+event_id and endpoint_record identify the assertion and bibliographic record.
+input_doi and evaluation_time are the matching fields. candidate_count and
+selected_source_doi record exact matching; an empty selected_source_doi is
+abstention. Rows can identify the same source document repeatedly.
+
+elife_families.csv: one sampled family (210 rows). sample_arm separates the
+60 fixed earlier selections from the 150 additional random selections. stratum
+identifies the fixed-frame URL class. Count and binary outcome fields are
+independently reconstructed from the preceding document and row tables.
+
+elife_census.csv: one source family (4,856 rows). has_vor and exact_MED select
+the separate version-of-record discovery population. Route indicators and
+residual_class describe captured bibliographic relations. first_vor_age_days
+is source publication age at the census cutoff.
+
+elife_residual.csv: the 647 census families without an enriched review event.
+Upstream evidence, declared input-DOI availability and operational fallback
+eligibility remain separate fields.
+
+elife_assessments.csv and elife_publisher_api.csv: selected current-assessment
+identifiers, source-reference agreement and abstention for their respective
+3,550-family and 120-family populations.
+
+elife_assessment_histories.csv: source-derived historical assessment comparisons
+for 3,550 version-of-record families. Lower and upper fields preserve unresolved
+source identity instead of assigning a preferred candidate.
+
+bmc_documents.csv: one publicly linked PDF attachment (554 rows across 72
+articles). doi, filename, role and stage identify the public source item.
+bytes_equal records exact equality of the retrieved source PDF and the
+corresponding decompressed archive member. source_url and archive_url identify
+the sources. cohort separates 12 fixed articles from 60 additional random
+selections. Preservation is defined at the article attachment-set level for inference. The public set
+provides no measure of undisclosed editorial correspondence.
+
+embo_families.csv: one EEB-attributed preprint (32 rows: two fixed and 30
+additional). journal_group distinguishes EMBO journals from Life Science
+Alliance. matching_event_rows counts qualifying assertions about composite
+dossiers, rather than individual reports. event_present requires an
+EMBO-attributed review event for the exact input DOI; event_with_url also
+requires a nonempty URL, with all sampled preprints as its denominator.
+direct_pointer_pdf denotes PDF bytes at a declared pointer;
+pointer_homepage denotes a redirect to the publisher landing page.
+source_pdf_recovered concerns the separate article route. A retrieved PDF can
+contain a notice that restricts disclosure rather than the review exchange.
+
+disclosure_cases.csv: three case-specific source-disclosure restrictions, with
+article and preprint DOIs, source URLs and page numbers. This is a case table,
+not a prevalence estimate for all journals or the complete service frame.
+
+sampling.json: recorded frames, fixed observations, seeds and additional draws.
+supporting_records.json: heading and content comparisons, source-identity
+corrections and documentary relationships reported in Supplementary Information.
+
+Counts are integers. Rates and confidence limits in generated outputs are
+proportions; multiply by 100 for percentages or percentage-point differences.
+An estimated range for eLife allows any outcomes in 11 unobserved small-stratum
+families. Its separate 95% interval also incorporates the random draw from
+2,829 remaining generic-URL families. Acquisition dates remain source provenance.
+
+Exact confidence-interval inputs
+
+Sampling!J24:J35 stores the positive counts used for the exact count limits in
+columns D and E. Sampling!B56 and B57 retain the corresponding finite-population
+size (2,829) and additional sample size (150). Columns H and I return #N/A if the
+observed positive count, actual additional-row count, population size or stated
+sample size no longer matches those inputs. Recalculate count limits with the
+analysis script after changing the sampling inputs. The workbook represents the
+fixed study data, rather than a general-purpose sampling calculator.
+
+Reproduction boundary
+
+The tables are derived observations, not historical XML/API responses or source
+PDFs. The endpoint table includes eligible rows only, not a full exclusion
+ledger. BMC byte-equality fields record the original comparisons; the archive
+includes paired attachment digests and recorded inventory-match outcomes,
+but not the independently enumerated raw inventories or PDF bytes. The selected text-comparison results and the full-sample exact-text fingerprints
+are derived observations, not distributed full-text pairs. These limits matter when distinguishing
+numerical reproducibility from independent source validation.
+
+manifest.sha256 hashes the distributed derived-data files and this dictionary.
+It detects changes to that snapshot; it does not authenticate historical source
+acquisition. Generated statistics retain proportions on the 0–1 scale.
+
+Recovered comparison records
+
+bmc_documents.csv includes source_pdf_sha256, archive_pdf_sha256 and source_bytes
+from the historical file comparisons. inventory_match records equality of the
+independently enumerated publisher and archive filename sets for that article.
+Preservation requires both inventory_match and bytes_equal for every attachment.
+These fields retain the historical comparison evidence; they do not recreate
+the source inventories or permit a new byte audit without the retained files.
+
+elife_text_identity.csv contains one row per matched intermediary output with
+text. source_record is the response basename; docmap_index, action_index and
+output_index are zero-based JSON-array positions, and step_id is the intermediary
+step key. source_doi identifies the matched publisher object, not a DOI asserted
+by that intermediary output. Concatenate textual content blocks with a space,
+collapse whitespace, trim, and case-fold before computing normalized_text_sha256.
+normalized_characters is the resulting string length. Markup and punctuation
+remain; this is an exact-string sensitivity, not semantic deduplication.
+
+A stable text has one normalized string across all compatible observed outputs
+for its source DOI. Duplicate groups are distinct source DOIs with the same
+normalized string within a family. New-text checks compare recovered steps with
+endpoint-matched objects, and later steps with earlier observed steps. Analysis
+of wholly text-observed histories is restricted to those histories; it does not
+estimate unique content in unreconstructed source objects.
+
+The optional scripts/extract_text_identity.py program regenerates the text
+fingerprints from separately supplied historical EEB response bodies. It does
+not fetch current responses or redistribute the captured review texts.
