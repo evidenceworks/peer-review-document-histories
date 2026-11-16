@@ -6,14 +6,14 @@ Data and code for *Discovery and documentary completeness in public peer review*
 
 ## Reproduce
 
-Extract the package and, from `Repository/`, run with Python 3.9 or newer:
+In Colab, select **Runtime → Run all**. The notebook retrieves the current public GitHub revision, runs the analysis and tests, and downloads `document_history_results.zip` with four numerical files: `statistics.json`, `family_outcomes.csv`, `step_coverage.csv` and `conditional_estimates.csv`.
+
+For a local run with Python 3.9 or newer, open a terminal in the repository directory:
 
 ```sh
 python scripts/reproduce.py
 python -m unittest discover -s tests -v
 ```
-
-The script writes `statistics.json`, `family_outcomes.csv`, `step_coverage.csv` and `conditional_estimates.csv` to `results/`. The notebook reproduces these outputs from the accompanying package.
 
 ## Data
 
